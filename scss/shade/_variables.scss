@@ -5,10 +5,11 @@
 // Colors
 $body-bg:               #37474F !default;
 $header-bg:             #263238 !default;
-$footer-bg:             $header-bg;
-$navbar-bg:             $header-bg;
+$footer-bg:             $header-bg !default;
+$navbar-bg:             $header-bg !default;
 
 $text-color:            #CFD8DC !default;
+$header-text-color:     darken($text-color, 15%) !default;
 
 $heading-color:         #90A4AE !default;
 $heading-hover-color:   #B0BEC5 !default;
@@ -21,10 +22,10 @@ $button-bg:             #263238 !default;
 $button-border:         $button-bg !default;
 $button-hover-bg:       lighten($button-bg, 10%) !default;
 $button-hover-border:   $button-hover-bg !default;
-$button-text:           darken($text-color, 10%);
-$button-hover-text:     $text-color;
+$button-text:           darken($text-color, 10%) !default;
+$button-hover-text:     $text-color !default;
 
-$border-color:          rgba(255,255,255,.05);
+$border-color:          rgba(255,255,255,.05) !default;
 
 $code-bg:               #263238 !default;
 
