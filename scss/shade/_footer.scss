@@ -1,0 +1,21 @@
+.site-footer {
+  position: relative;
+  margin: 80px 0 0;
+  padding: 40px; 0;
+  border-top: 1px solid $border-color;
+  font-size: .875rem;
+  line-height: $line-height;
+  color: darken($text-color, 20%);
+  text-aligh: center;
+  background-color: $footer-bg;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    @include transition(color .2s ease);
+    &:hover,
+    &:focus {
+      color: lighten($text-color, 10%);
+    }
+  }
+}
