@@ -1,0 +1,43 @@
+.pagination {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: $font-family;
+  font-size: .875rem;
+  color: $text-color;
+  text-align: center;
+
+  a {
+    color: $text-color;
+  }
+}
+
+.older-posts,
+.newer-posts {
+  position: absolute;
+  display: inline-block;
+  padding: 0 15px;
+  border: 1px solid $border-color;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: $pagination-bg;
+  @include transition(border .2s ease);
+  &:hover,
+  &:focus {
+    border-color: $pagination-bg;
+  }
+}
+
+.older-posts {
+  right: 0;
+}
+
+.newer-posts {
+  left: 0;
+}
+
+.page-number {
+  display: inline-block;
+  padding: 2px 0;
+}
