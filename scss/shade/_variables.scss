@@ -1,0 +1,37 @@
+//
+// Shade Ghost theme variables
+// -----------------------------
+
+// Colors
+$body-bg:               #37474F !default;
+$header-bg:             #263238 !default;
+$footer-bg:             $header-bg;
+$navbar-bg:             $header-bg;
+
+$text-color:            #CFD8DC !default;
+
+$heading-color:         #90A4AE !default;
+$heading-hover-color:   #B0BEC5 !default;
+
+$meta-color:            #607D8B !default;
+$meta-tag-color:        #B0BEC5 !default;
+
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+$font-family:           "Roboto Mono", "Courier New", Courier, monospace !default;
+$font-family-code:      "Inconsolata", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
+$font-size-root:        16px !default;
+$font-size:             1rem !default;
+
+$font-size-h1:          3.125rem !default;  // 50px
+$font-size-h2:          2.5rem !default;    // 40px
+$font-size-h3:          2rem !default;      // 32px
+$font-size-h4:          1.625rem !default;  // 26px
+$font-size-h5:          1.25rem !default;   // 20px
+$font-size-h6:          1rem !default;      // 16px
+
+$line-height:           1.5 !default;
+
