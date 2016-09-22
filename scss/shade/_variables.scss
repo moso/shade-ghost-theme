@@ -14,6 +14,7 @@ $heading-color:         #90A4AE !default;
 $heading-hover-color:   #B0BEC5 !default;
 
 $meta-color:            #607D8B !default;
+$meta-hover-color:      lighten($meta-color, 10%);
 $meta-tag-color:        #B0BEC5 !default;
 
 

@@ -1,0 +1,50 @@
+.post {
+  position: relative;
+  width: 80%;
+  max-width: 850px;
+  margin: 2.5rem auto;
+  padding-bottom: 2.5rem;
+  border-bottom: $header-bg 1px solid;
+  word-break: break-word;
+
+  .post-header {
+    .post-title {
+      margin: 0;
+      color: $heading-color;
+      a {
+        color: $heading-color;
+        @include transition(color .2s ease);
+        &:hover,
+        &:focus {
+          color: $heading-hover-color;
+        }
+      }
+    }
+
+    .post-meta {
+      display: inline-block;
+      margin: 0 0 5px 0;
+      font-size: 1.5rem;
+      color: $meta-color;
+      a {
+        color: #846d8f;
+        text-decoration: none;
+        @include transition(color .2s ease);
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .post-excerpt {
+    p {
+      margin: 1rem 0 0;
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+
+}
+
