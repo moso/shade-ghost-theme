@@ -21,8 +21,12 @@ $button-bg:             #263238 !default;
 $button-border:         $button-bg !default;
 $button-hover-bg:       lighten($button-bg, 10%) !default;
 $button-hover-border:   $button-hover-bg !default;
+$button-text:           darken($text-color, 10%);
+$button-hover-text:     $text-color;
 
 $border-color:          rgba(255,255,255,.05);
+
+$code-bg:               #263238 !default;
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,700);

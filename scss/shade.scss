@@ -11,6 +11,13 @@
 // Normalize
 @import 'shade/normalize';
 
+// Core CSS
+@import 'shade/scaffolding';
+@import 'shade/typography';
+
 // Posts and single posts
 @import 'shade/posts';
 @import 'shade/single-posts';
+
+// Icons
+@import 'shade/icons';
