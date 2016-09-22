@@ -1,0 +1,16 @@
+/*!
+ * Shade Ghost theme
+ * Copyright (c) 2016 Morten Sørensen
+ * Licensed under MIT (https://github.com/moso/shade-ghost-theme/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import 'shade/variables';
+@import 'shade/mixins';
+
+// Normalize
+@import 'shade/normalize';
+
+// Posts and single posts
+@import 'shade/posts';
+@import 'shade/single-posts';
