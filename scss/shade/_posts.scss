@@ -24,14 +24,15 @@
     .post-meta {
       display: inline-block;
       margin: 0 0 5px 0;
-      font-size: 1.5rem;
+      font-size: .875rem;
       color: $meta-color;
       a {
-        color: #846d8f;
+        color: $meta-color;
         text-decoration: none;
         @include transition(color .2s ease);
         &:hover,
         &:focus {
+          color: $meta-hover-color;
           text-decoration: underline;
         }
       }

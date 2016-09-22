@@ -1,0 +1,135 @@
+.post-template {
+  .post {
+    margin: 0 auto 2.5rem auto;
+    border-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    width: 80%;
+    max-width: 850px;
+    word-break: break-word;
+    &:after {
+      display: none;
+    }
+
+    .post-header {
+      padding: 3.75rem auto 0 auto;
+
+      #blog-logo {
+        width: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        border: 5px solid #B0BEC5;
+        &:before {
+          margin: 3.75rem auto;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: block;rgba(176, 190, 197, 1)
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: none;
+          border: 5px solid #B0BEC5;
+          @include transition(background-color .2s linear);
+        }
+        &:hover:before {
+          background-color: rgba(176,190,197,.5);
+        }
+
+        img {
+          display: block;
+          max-height: 100px;
+          width: auto;
+          line-height: 0;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .home-button {
+      border-radius: 3px;
+      background-color: $button-bg;
+      border: 2px solid $button-border;
+      padding: 7px;
+      text-decoration: none;
+      color: $button-text;
+      margin-bottom: 2.5rem;
+      @include transition(all .2s ease);
+      &:hover,
+      &:focus {
+        background-color: $button-hover-bg;
+        border: 2px solid $button-hover-border;
+        color: $button-hover-text;
+        outline: 0;
+      }
+    }
+
+    .post-meta {
+      display: inline-block;
+      margin: 0 0 5px 0;
+      font-size: .875rem;
+      color: $meta-color;
+      @include transition(color .2s ease);
+      a {
+        color: $meta-color;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          color: $meta-hover-color;
+          text-decoration: underline;
+        }
+      } 
+    }
+
+    .post-title {
+      margin: 0;
+      color: $heading-color;
+    }
+
+    .post-content {
+      p {
+        margin: 1rem 0 0;
+        &:last-of-type {
+          margin: 0;
+        }
+      }
+    }
+
+    .post-footer {
+      position: relative;
+      margin: 2.5rem 0 0;
+      padding: 2.5rem 0 0;
+      border-top: 2px solid $border-color;
+
+      .share {
+        position: absolute;
+        right: 0;
+        top: 2.5rem;
+        width: 140px;
+
+        h4 {
+          font-size: 1.125rem;
+          margin: 0;
+        }
+
+        a {
+          font-size: 1.125rem;
+          display: inline-block;
+          margin: .875rem 1rem 1rem 0;
+          color: $text-color;
+          @include transition(color .2s ease);
+          &:hover,
+          &:focus {
+            color: lighten($text-color, 10%);
+          }
+        }
+      }
+    }
+  }
+}

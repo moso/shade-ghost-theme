@@ -14,9 +14,15 @@ $heading-color:         #90A4AE !default;
 $heading-hover-color:   #B0BEC5 !default;
 
 $meta-color:            #607D8B !default;
-$meta-hover-color:      lighten($meta-color, 10%);
+$meta-hover-color:      lighten($meta-color, 10%) !default;
 $meta-tag-color:        #B0BEC5 !default;
 
+$button-bg:             #263238 !default;
+$button-border:         $button-bg !default;
+$button-hover-bg:       lighten($button-bg, 10%) !default;
+$button-hover-border:   $button-hover-bg !default;
+
+$border-color:          rgba(255,255,255,.05);
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,700);
