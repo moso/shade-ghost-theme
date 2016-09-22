@@ -11,20 +11,50 @@ h1 {
   font-size: $font-size-h1;
   line-height: 3.75rem;
   text-indent: -3px;
+
+  @media (max-width: 900px) {
+    font-size: $font-size-h2;
+    text-indent: -2px;
+  }
+  @media (max-width: 500px) {
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
 }
 
 h2 {
   font-size: $font-size-h2;
   line-height: 3.75rem;
   text-indent: -2px;
+
+  @media (max-width: 900px) {
+    font-size: $font-size-h3;
+  }
+  @media (max-width: 500px) {
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
 }
 
 h3 {
   font-size: $font-size-h3;
+
+  @media (max-width: 900px) {
+    font-size: $font-size-h4;
+  }
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
 }
 
 h4 {
   font-size: $font-size-h4;
+
+  @media (max-width: 500px) {
+    font-size: 23px;
+  }
 }
 
 h5 {

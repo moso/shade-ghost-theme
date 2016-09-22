@@ -9,6 +9,11 @@
   text-aligh: center;
   background-color: $footer-bg;
 
+  @media (max-width: 500px) {
+    margin-top: 60px;
+    font-size: .6875rem;
+  }
+
   a {
     color: $text-color;
     text-decoration: none;

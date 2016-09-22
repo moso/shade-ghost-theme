@@ -8,6 +8,12 @@
   color: $text-color;
   text-align: center;
 
+  @media (max-width: 500px) {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   a {
     color: $text-color;
   }
@@ -27,6 +33,11 @@
   &:focus {
     border-color: $pagination-bg;
   }
+
+  @media (max-width: 500px) {
+    position: static;
+    margin: 10px 0;
+  }
 }
 
 .older-posts {
@@ -40,4 +51,8 @@
 .page-number {
   display: inline-block;
   padding: 2px 0;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
 }

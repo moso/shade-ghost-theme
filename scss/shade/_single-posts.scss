@@ -11,8 +11,29 @@
       display: none;
     }
 
+    @media (max-width: 900px) {
+      font-size: .875rem;
+      line-height: 1;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 500px) {
+      width: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: .875rem;
+      line-height: 1;
+      padding-bottom: 0;
+    }
+
     .post-header {
       padding: 3.75rem auto 0 auto;
+
+      @media (max-width: 900px) {
+        padding: 40px 0;
+      }
+      @media (max-width: 500px) {
+        padding: 30px auto;
+      }
 
       #blog-logo {
         width: 100px;
@@ -21,6 +42,11 @@
         display: block;
         margin: 0 auto;
         border: 5px solid #B0BEC5;
+
+        @media (max-width: 500px) {
+          width: 80px;
+        }
+
         &:before {
           margin: 3.75rem auto;
           width: 100px;
@@ -37,6 +63,15 @@
           background: none;
           border: 5px solid #B0BEC5;
           @include transition(background-color .2s linear);
+
+          @media (max-width: 900px) {
+            margin: 40px auto;
+          }
+          @media (max-width: 500px) {
+            width: 80px;
+            height: 80px;
+            margin: 30px auto;
+          }
         }
         &:hover:before {
           background-color: rgba(176,190,197,.5);
@@ -48,6 +83,10 @@
           width: auto;
           line-height: 0;
           border-radius: 50%;
+
+          @media (max-width: 500px) {
+            max-height: 80px;
+          }
         }
       }
     }
@@ -76,6 +115,11 @@
       font-size: .875rem;
       color: $meta-color;
       @include transition(color .2s ease);
+
+      @media (max-width: 500px) {
+        font-size: 13px;
+      }
+
       a {
         color: $meta-color;
         text-decoration: none;
@@ -107,11 +151,21 @@
       padding: 2.5rem 0 0;
       border-top: 2px solid $border-color;
 
+      @media (max-width: 500px) {
+        padding: 40px 0;
+        text-align: center;
+      }
+
       .share {
         position: absolute;
         right: 0;
         top: 2.5rem;
         width: 140px;
+
+        @media (max-width: 500px) {
+          position: static;
+          width: auto;
+        }
 
         h4 {
           font-size: 1.125rem;
@@ -127,6 +181,10 @@
           &:hover,
           &:focus {
             color: lighten($text-color, 10%);
+          }
+
+          @media (max-width: 500px) {
+            margin: .0875rem .5rem 0 .5rem;
           }
         }
       }

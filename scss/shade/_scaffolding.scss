@@ -30,6 +30,12 @@ body {
   width: 80%;
   max-width: 700px;
   margin: 0 auto;
+
+  @media (max-width: 500px) {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .vertical {
@@ -48,6 +54,15 @@ body {
   color: $header-text;
   background-color: $header-bg no-repeat center center;
   background-size: cover;
+
+  @media (max-width: 900px) {
+    height: auto;
+    min-height: 240px;
+    padding: 15% 0;
+  }
+  @media (max-width: 500px) {
+    padding: 10% 0;
+  }
 }
 
 #back {
@@ -63,6 +78,14 @@ body {
   margin: 10px 0;
   font-size: $font-size-h1;
   letter-spacing: -1px;
+
+  @media (max-width: 900px) {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+  @media (max-width: 500px) {
+    font-size: 30px;
+  }
 }
 
 .blog-description {
@@ -71,6 +94,14 @@ body {
   line-height: $line-height;
   font-weight: 300;
   letter-spacing: 0;
+
+  @media (max-width: 900px) {
+    font-size: 1.125rem;
+    line-height: $line-height;
+  }
+  @media (max-width: 500px) {
+    font-size: .875rem;
+  }
 }
 
 .user-meta {

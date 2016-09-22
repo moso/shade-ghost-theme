@@ -7,6 +7,18 @@
   border-bottom: $header-bg 1px solid;
   word-break: break-word;
 
+  @media (max-width: 900px) {
+    font-size: .875rem;
+    line-height: 1;
+  }
+  @media (max-width: 500px) {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: .875rem;
+    line-height: 1;
+  }
+
   .post-header {
     .post-title {
       margin: 0;
