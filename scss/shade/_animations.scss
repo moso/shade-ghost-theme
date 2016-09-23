@@ -1,0 +1,40 @@
+.animated {
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@include keyframes(bounceInDown) {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+     -moz-animation-name: bounceInDown;
+          animation-name: bounceInDown;
+}
