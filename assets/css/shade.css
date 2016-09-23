@@ -846,50 +846,17 @@ button, input, select, textarea {
       .post-template .post .post-header {
         padding: 30px auto; } }
     .post-template .post .post-header #blog-logo {
-      width: 100px;
-      border-radius: 50%;
       overflow: hidden;
       display: block;
-      margin: 0 auto;
-      border: 5px solid #B0BEC5; }
+      margin: 25px auto 50px auto; }
       @media (max-width: 500px) {
         .post-template .post .post-header #blog-logo {
           width: 80px; } }
-      .post-template .post .post-header #blog-logo:before {
-        margin: 3.75rem auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        overflow: hidden;
-        display: block;
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: none;
-        border: 5px solid #B0BEC5;
-        -webkit-transition: background-color 0.2s linear;
-        -moz-transition: background-color 0.2s linear;
-        -ms-transition: background-color 0.2s linear;
-        transition: background-color 0.2s linear; }
-        @media (max-width: 900px) {
-          .post-template .post .post-header #blog-logo:before {
-            margin: 40px auto; } }
-        @media (max-width: 500px) {
-          .post-template .post .post-header #blog-logo:before {
-            width: 80px;
-            height: 80px;
-            margin: 30px auto; } }
-      .post-template .post .post-header #blog-logo:hover:before {
-        background-color: rgba(176, 190, 197, 0.5); }
       .post-template .post .post-header #blog-logo img {
         display: block;
         max-height: 100px;
         width: auto;
-        line-height: 0;
-        border-radius: 50%; }
+        line-height: 0; }
         @media (max-width: 500px) {
           .post-template .post .post-header #blog-logo img {
             max-height: 80px; } }
@@ -897,10 +864,9 @@ button, input, select, textarea {
     border-radius: 3px;
     background-color: #263238;
     border: 2px solid #263238;
-    padding: 7px;
+    padding: 7px 12px;
     text-decoration: none;
     color: #b2c0c6;
-    margin-bottom: 2.5rem;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -935,10 +901,13 @@ button, input, select, textarea {
     margin: 1rem 0 0; }
     .post-template .post .post-content p:last-of-type {
       margin: 0; }
+  .post-template .post .post-content h2, .post-template .post .post-content h3, .post-template .post .post-content h4, .post-template .post .post-content h5, .post-template .post .post-content h6 {
+    margin-top: 10px;
+    margin-bottom: 20px; }
   .post-template .post .post-footer {
     position: relative;
     margin: 2.5rem 0 0;
-    padding: 2.5rem 0 0;
+    padding: 1.5rem 0 0;
     border-top: 2px solid rgba(255, 255, 255, 0.05); }
     @media (max-width: 500px) {
       .post-template .post .post-footer {
@@ -947,7 +916,6 @@ button, input, select, textarea {
     .post-template .post .post-footer .share {
       position: absolute;
       right: 0;
-      top: 2.5rem;
       width: 140px; }
       @media (max-width: 500px) {
         .post-template .post .post-footer .share {
