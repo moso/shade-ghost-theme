@@ -450,10 +450,9 @@ body {
   display: table;
   width: 100%;
   height: 60%;
-  margin-bottom: 50px;
   text-align: center;
   color: #a3b4bc;
-  background-color: #263238 no-repeat center center;
+  background: #263238 no-repeat center center;
   background-size: cover; }
   @media (max-width: 900px) {
     #site-head {
