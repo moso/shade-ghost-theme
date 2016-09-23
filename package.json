@@ -1,6 +1,6 @@
 {
-  "name": "Shade",
-  "version": "1.0",
+  "name": "shade-ghost-theme",
+  "version": "1.0.0",
   "description": "null",
   "main": "gulpfile.js",
   "dependencies": {},
