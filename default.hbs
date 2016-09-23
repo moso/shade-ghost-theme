@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="{{asset "css/shade.css"}}">
+    
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+  </head>
+  <body class="{{body_class}}">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <div class="inner">
+             <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">Morten Sørensen</a>. Published with <a href="https://ghost.org">Ghost</a>.</section>
+        </div>
+    </footer>
+
+    <script src="https://cdn.cloudcache.dk/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/shell.js"}}"></script>
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+  </body>
+</html>
