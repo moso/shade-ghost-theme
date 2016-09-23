@@ -772,7 +772,7 @@ button, input, select, textarea {
   max-width: 850px;
   margin: 2.5rem auto;
   padding-bottom: 2.5rem;
-  border-bottom: #263238 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.05) 1px solid;
   word-break: break-word; }
   @media (max-width: 900px) {
     .post {
