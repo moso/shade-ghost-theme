@@ -5,6 +5,7 @@
     background-color: $navbar-bg;
     border-bottom: 1px solid $border-color;
     text-align: left;
+    z-index: 999;
 
     .float_center {
       float: right;

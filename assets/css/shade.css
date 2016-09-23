@@ -719,7 +719,8 @@ button, input, select, textarea {
   #navWrap #nav {
     background-color: #263238;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: left; }
+    text-align: left;
+    z-index: 999; }
     #navWrap #nav .float_center {
       float: right;
       position: relative;
