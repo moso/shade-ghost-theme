@@ -721,6 +721,8 @@ button, input, select, textarea {
     background-color: #263238;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     text-align: left;
+    padding: 6px 0;
+    height: 38px;
     z-index: 999; }
     #navWrap #nav .float_center {
       float: right;
