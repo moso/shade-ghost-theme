@@ -1,0 +1,35 @@
+#navWrap {
+  height: 38px;
+
+  #nav {
+    background-color: $navbar-bg;
+    border-bottom: 1px solid $border-color;
+    text-align: left;
+
+    .float_center {
+      float: right;
+      position: relative;
+      left: -50%;
+      text-align: left;
+      &> .child {
+        position: relative;
+        left: 50%;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      position: relative;
+      left: 50%;
+
+      li {
+        float: left;
+        padding: 3px 8px;
+        margin: 0 10px 0 0;
+        list-style-type: none;
+      }
+    }
+  }
+}

@@ -146,3 +146,7 @@ body {
   font-size: .875rem;
   line-height: $line-height;
 }
+
+br.clearLeft {
+  clear: left;
+}
