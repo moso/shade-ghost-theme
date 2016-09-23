@@ -797,7 +797,8 @@ button, input, select, textarea {
       -ms-transition: color 0.2s ease;
       transition: color 0.2s ease; }
       .post .post-header .post-title a:hover, .post .post-header .post-title a:focus {
-        color: #B0BEC5; }
+        color: #B0BEC5;
+        cursor: pointer; }
   .post .post-header .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
