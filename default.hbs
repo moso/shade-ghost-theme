@@ -7,20 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}">
     <link rel="stylesheet" href="{{asset "css/shade.css"}}">
-    
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
-
   </head>
   <body class="{{body_class}}">
-
     {{! Everything else gets inserted here }}
     {{{body}}}
-
-    <footer class="site-footer">
-        <div class="inner">
-             <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">Morten Sørensen</a>. Published with <a href="https://ghost.org">Ghost</a>.</section>
-        </div>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>&copy; {{date format="YYYY"}} <a href="/">Morten Sørensen</a>. Published with <a href="https://ghost.org">Ghost</a>.</p>    
+          </div>
+        </div>        
+      </div>
     </footer>
 
     <script src="https://cdn.cloudcache.dk/jquery/jquery-1.12.4.min.js"></script>
