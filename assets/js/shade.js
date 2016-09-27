@@ -1,28 +1,33 @@
-$(function() {
- var nav = $('#nav');
- var navWrap = $('#navWrap');
-    var navHomeY = nav.offset().top;
-    var isFixed = false;
-    var $w = $(window);
-    $w.scroll(function() {
-        var scrollTop = $w.scrollTop();
-        var shouldBeFixed = scrollTop > navHomeY;
-        if (shouldBeFixed && !isFixed) {
+// In lack of affixed navbar in Bootstrap 4
+$(document).ready(function() {
+    var toggleAffix = function(affixElement, scrollElement, wrapper) {
+  
+        var height = affixElement.outerHeight(),
+            top = wrapper.offset().top;
+    
+        if (scrollElement.scrollTop() >= top){
+            wrapper.height(height);
+            affixElement.addClass("affix");
+        } else {
+            affixElement.removeClass("affix");
+            wrapper.height('auto');
+        }
+    };
 
-            nav.css({
-                position: 'fixed',
-                top: 0,
-                left: nav.offset().left,
-                width: nav.width()
-            });
-            isFixed = true;
-        }
-        else if (!shouldBeFixed && isFixed)
-        {
-            nav.css({
-                position: 'static'
-            });
-            isFixed = false;
-        }
-    });
+    // Remember to put 'data-toggle="affix"' on <nav>.
+    // If you want different styling for the affixed nav
+    // then check the _nav.scss file.
+    $('[data-toggle="affix"]').each(function() {
+        var ele = $(this),
+            wrapper = $('<div></div>');
+    
+        ele.before(wrapper);
+    
+        $(window).on('scroll resize', function() {
+            toggleAffix(ele, $(this), wrapper);
+        });
+    
+        // Init
+        toggleAffix(ele, $(window), wrapper);
+    });  
 });
