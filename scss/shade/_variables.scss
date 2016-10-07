@@ -32,11 +32,13 @@ $code-bg:               #263238 !default;
 $pagination-bg:         #263238 !default;
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,500,700);
-@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import 'https://cdn.cloudcache.dk/fonts/roboto-slab/css/roboto-slab.css';
+@import 'https://cdn.cloudcache.dk/fonts/roboto-draft/css/roboto-draft.css';
+@import 'https://cdn.cloudcache.dk/fonts/liberation-mono/css/liberation-mono.css';
 
-$font-family:           "Roboto Mono", "Courier New", Courier, monospace !default;
-$font-family-code:      "Inconsolata", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
+$font-family:           "Roboto Draft", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-heading:   "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
+$font-family-code:      "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
 $font-size-root:        16px !default;
 $font-size:             1rem !default;
 
