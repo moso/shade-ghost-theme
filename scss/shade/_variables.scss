@@ -40,7 +40,7 @@ $font-family:           "Roboto Draft", Roboto, "Helvetica Neue", Helvetica, Ari
 $font-family-heading:   "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
 $font-family-code:      "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
 $font-size-root:        16px !default;
-$font-size:             1rem !default;
+$font-size:             1.125rem !default;  // 18px
 
 $font-size-h1:          3.125rem !default;  // 50px
 $font-size-h2:          2.5rem !default;    // 40px
@@ -50,4 +50,3 @@ $font-size-h5:          1.25rem !default;   // 20px
 $font-size-h6:          1rem !default;      // 16px
 
 $line-height:           1.5 !default;
-
