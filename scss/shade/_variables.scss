@@ -7,6 +7,7 @@ $body-bg:               #37474F !default;
 $header-bg:             #263238 !default;
 $footer-bg:             $header-bg !default;
 $navbar-bg:             $header-bg !default;
+$nav-side-bg:           $body-bg !default;
 
 $text-color:            #CFD8DC !default;
 $header-text-color:     darken($text-color, 15%) !default;
