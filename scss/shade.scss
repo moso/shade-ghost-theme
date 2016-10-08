@@ -8,9 +8,6 @@
 @import 'shade/variables';
 @import 'shade/mixins';
 
-// Normalize
-@import 'shade/normalize';
-
 // Core CSS
 @import 'shade/scaffolding';
 @import 'shade/typography';
@@ -24,6 +21,3 @@
 
 // Animations
 @import 'shade/animations';
-
-// Icons
-@import 'shade/icons';

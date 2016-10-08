@@ -1,9 +1,4 @@
 // Basics
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
 html {
   height: 100%;
   max-height: 100%;
@@ -18,12 +13,6 @@ body {
   font-weight: 300;
   color: $text-color;
   background-color: $body-bg;
-}
-
-.hidden {
-  text-indent: -9999px;
-  visibility: hidden;
-  display: none;
 }
 
 .inner {
@@ -43,10 +32,6 @@ body {
   }
 }
 
-.vertical {
-  display: table-cell;
-  vertical-align: middle;
-}
 
 // Page
 #site-head {
@@ -149,8 +134,4 @@ body {
   display: block;
   font-size: .875rem;
   line-height: $line-height;
-}
-
-br.clearLeft {
-  clear: left;
 }

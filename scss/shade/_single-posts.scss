@@ -4,8 +4,6 @@
     border-bottom: 0;
     padding-bottom: 0;
     position: relative;
-    width: 80%;
-    max-width: 850px;
     word-break: break-word;
     &:after {
       display: none;
@@ -93,7 +91,7 @@
           color: $meta-hover-color;
           text-decoration: underline;
         }
-      } 
+      }
     }
 
     .post-title {
