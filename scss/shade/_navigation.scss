@@ -1,13 +1,15 @@
 // Nav
 .navbar {
   border-radius: 0;
-  background-color: $navbar-bg;
-  padding: .5rem 0;
+  background-color: transparent;
+  margin: 0 -15px;
+  padding: 15px;
+  z-index: 1;
 
   .navbar-toggler {
     color: darken($text-color, 15%);
     outline: 0;
-    @include transition(color .2s ease);
+    transition: color .2s ease;
     &:hover,
     &:focus,
     &:active {
@@ -24,21 +26,20 @@
     right: 0;
     padding: 0;
     list-style: none;
-    border-left: 1px solid $border-color;
-    background-color: $nav-side-bg;
-    overflow-y: scroll;
+    border-left: 1px solid rgba(255,255,255,.05);
+    background-color: #37474F;
     z-index: 1000;
     transform: translateX(100%);
-    @include transition(.2s ease);
+    transition: .2s ease;
     &.reveal {
       transform: translateX(0%);
-      @include transition(.2s ease);
+      transition: .2s ease;
     }
 
     .navbar-side-item {
       padding: 1.5rem 0;
       margin: 0;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid rgba(255,255,255,.05);
       height: 5rem;
 
       a {
