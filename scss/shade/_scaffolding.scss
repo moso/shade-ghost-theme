@@ -15,84 +15,8 @@ body {
   background-color: $body-bg;
 }
 
-.inner {
-  position: relative;
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-
-  @media (max-width: 500px) {
-    width: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  img {
-    max-height: 200px;
-  }
-}
-
 
 // Page
-#site-head {
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 60%;
-  text-align: center;
-  color: $header-text-color;
-  background: $header-bg no-repeat center center;
-  background-size: cover;
-
-  @media (max-width: 900px) {
-    height: auto;
-    min-height: 240px;
-    padding: 15% 0;
-  }
-  @media (max-width: 500px) {
-    padding: 10% 0;
-  }
-}
-
-#back {
-  color: rgba(0,0,0,.2);
-  position: fixed;
-  top: 8px;
-  left: 8px;
-  padding: 6px;
-  font-size: 1rem;
-}
-
-.blog-title {
-  margin: 10px 0;
-  font-size: $font-size-h1;
-  letter-spacing: -1px;
-
-  @media (max-width: 900px) {
-    font-size: 40px;
-    letter-spacing: -1px;
-  }
-  @media (max-width: 500px) {
-    font-size: 30px;
-  }
-}
-
-.blog-description {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: $line-height;
-  font-weight: 300;
-  letter-spacing: 0;
-
-  @media (max-width: 900px) {
-    font-size: 1.125rem;
-    line-height: $line-height;
-  }
-  @media (max-width: 500px) {
-    font-size: .875rem;
-  }
-}
-
 .user-meta {
   position: relative;
   padding: 3px 40px 0 100px;
