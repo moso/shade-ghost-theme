@@ -19,13 +19,6 @@ $meta-color:            #607D8B !default;
 $meta-hover-color:      lighten($meta-color, 10%) !default;
 $meta-tag-color:        #B0BEC5 !default;
 
-$button-bg:             #263238 !default;
-$button-border:         $button-bg !default;
-$button-hover-bg:       lighten($button-bg, 10%) !default;
-$button-hover-border:   $button-hover-bg !default;
-$button-text:           darken($text-color, 10%) !default;
-$button-hover-text:     $text-color !default;
-
 $border-color:          rgba(255,255,255,.05) !default;
 
 $code-bg:               #263238 !default;

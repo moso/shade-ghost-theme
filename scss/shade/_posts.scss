@@ -1,12 +1,13 @@
+// Posts
 .post {
-  position: relative;
   margin: 2.5rem auto;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
   border-bottom: $border-color 1px solid;
+  font-size: 1.125rem;
   word-break: break-word;
 
   @media (max-width: 900px) {
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1;
   }
   @media (max-width: 500px) {
@@ -19,8 +20,10 @@
 
   .post-header {
     .post-title {
-      margin: 0;
+      margin: 0 0 .5rem;
       color: $heading-color;
+      font-size: 2.5rem;
+      line-height: 3.75rem;
       a {
         color: $heading-color;
         @include transition(color .2s ease);
@@ -52,9 +55,12 @@
 
   .post-excerpt {
     p {
-      margin: 1rem 0 0;
+      margin: 0 0 1rem;
       font-size: 1rem;
       line-height: 2rem;
+      &:last-of-type {
+        margin: 0;
+      }
     }
   }
 }
