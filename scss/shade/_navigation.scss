@@ -1,7 +1,9 @@
 // Nav
 .navbar {
+  position: fixed;
+  width: 100%;
   border-radius: 0;
-  background-color: transparent;
+  background-color: $header-bg;
   margin: 0 -15px;
   padding: 15px;
   z-index: 1;
@@ -27,7 +29,7 @@
     padding: 0;
     list-style: none;
     border-left: 1px solid rgba(255,255,255,.05);
-    background-color: $body-bg;
+    background-color: #37474F;
     z-index: 1000;
     transform: translateX(100%);
     transition: .2s ease;
