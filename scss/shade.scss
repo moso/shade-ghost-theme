@@ -9,10 +9,11 @@
 @import 'shade/mixins';
 
 // Core CSS
-@import 'shade/scaffolding';
 @import 'shade/typography';
-@import 'shade/pagination';
 @import 'shade/navigation';
+@import 'shade/header';
+@import 'shade/scaffolding';
+@import 'shade/pagination';
 @import 'shade/footer';
 
 // Posts and single posts
