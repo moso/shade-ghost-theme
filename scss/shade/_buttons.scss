@@ -1,0 +1,20 @@
+// Buttons
+.btn {
+  // Additions to- and fixes for the common Bootstrap button
+  min-width: 7rem;
+  color: darken($text-color, 10%);
+  padding: .5rem 1.125rem; // 8px 16px
+  border-radius: 2px;
+  @include transition(background-color .2s ease);
+}
+
+.btn-ghost {
+  // Not confused with the ghost button (outline)
+  background-color: darken($header-bg, 5%);
+  &:hover,
+  &:focus {
+    color: darken($text-color, 10%);
+    background-color: darken($header-bg, 10%);
+    border: 1px solid transparent;
+  }
+}
