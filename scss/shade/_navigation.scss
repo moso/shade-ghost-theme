@@ -22,7 +22,7 @@
 
   .navbar-side {
     height: 100%;
-    width: 25%;
+    width: 85%;
     position: fixed;
     top: 0;
     right: 0;
@@ -33,6 +33,12 @@
     z-index: 1000;
     transform: translateX(100%);
     transition: .2s ease;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 992px) {
+      width: 25%;
+    }
     &.reveal {
       transform: translateX(0%);
       transition: .2s ease;
