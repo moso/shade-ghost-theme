@@ -27,7 +27,7 @@
     padding: 0;
     list-style: none;
     border-left: 1px solid rgba(255,255,255,.05);
-    background-color: #37474F;
+    background-color: $body-bg;
     z-index: 1000;
     transform: translateX(100%);
     transition: .2s ease;
@@ -44,6 +44,7 @@
 
       a {
         color: darken($text-color, 10%);
+        font-weight: normal;
         padding-left: 2rem;
         transition: color .2s ease;
         &:hover,
