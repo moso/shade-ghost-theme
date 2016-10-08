@@ -6,14 +6,16 @@
 {{navigation}}
 
 {{! The big featured header on the homepage, with the site logo and description }}
-<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-    <div class="vertical animated bounceInDown">
-        <div id="site-head-content" class="inner">
-            {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-            <h1 class="blog-title">{{@blog.title}}</h1>
-            <h2 class="blog-description">{{@blog.description}}</h2>
-        </div>
+<header>
+  <div class="animated bounceInDown">
+    <div class="inner">
+      {{#if @blog.logo}}<a href="{{@blog.url}}">
+        <img src="{{@blog.logo}}" alt="Blog Logo">
+      </a>{{/if}}
+      <h1 class="blog-title">{{@blog.title}}</h1>
+      <h2 class="blog-description">{{@blog.description}}</h2>
     </div>
+  </div>
 </header>
 
 {{! The main content area on the homepage }}
