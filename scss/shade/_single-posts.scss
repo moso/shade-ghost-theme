@@ -55,6 +55,14 @@
         margin-top: 10px;
         margin-bottom: 20px;
       }
+
+      a {
+        font-weight: 400;
+        &:hover,
+        &:focus {
+          cursor: pointer;
+        }
+      }
     }
 
     .post-footer {
