@@ -1,33 +1,31 @@
-// In lack of affixed navbar in Bootstrap 4
-$(document).ready(function() {
-    var toggleAffix = function(affixElement, scrollElement, wrapper) {
-  
-        var height = affixElement.outerHeight(),
-            top = wrapper.offset().top;
-    
-        if (scrollElement.scrollTop() >= top){
-            wrapper.height(height);
-            affixElement.addClass("affix");
-        } else {
-            affixElement.removeClass("affix");
-            wrapper.height('auto');
-        }
-    };
+// SIDEBAR
+$(function() {
+    // Open navbarSide when button is clicked
+    $('.navbar-toggler').on('click', function() {
+        $('.navbar-side').addClass('reveal');
+        $('.overlay').show();
+    });
 
-    // Remember to put 'data-toggle="affix"' on <nav>.
-    // If you want different styling for the affixed nav
-    // then check the _nav.scss file.
-    $('[data-toggle="affix"]').each(function() {
-        var ele = $(this),
-            wrapper = $('<div></div>');
-    
-        ele.before(wrapper);
-    
-        $(window).on('scroll resize', function() {
-            toggleAffix(ele, $(this), wrapper);
-        });
-    
-        // Init
-        toggleAffix(ele, $(window), wrapper);
-    });  
+    // Close navbarSide when the outside of menu is clicked
+    $('.overlay').on('click', function(){
+        $('.navbar-side').removeClass('reveal');
+        $('.overlay').hide();
+    });
+});
+
+// INFINITE SCROLL PAGINATION
+$(function() {
+    var page = 2;
+    var url_blog = window.location;
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $.get((url_blog +'/page/'+page),
+            function(content) {
+                if(page <= max_pages){
+                    $('.content').append($(content).children(".post"));
+                    page = page + 1;
+                }
+            });
+        }
+    });
 });
