@@ -122,7 +122,8 @@ a {
         width: 50%; } }
     @media (min-width: 992px) {
       .navbar .navbar-side {
-        width: 25%; } }
+        width: 25%;
+        max-width: 240px; } }
     .navbar .navbar-side.reveal {
       transform: translateX(0%);
       transition: .2s ease; }
@@ -313,6 +314,8 @@ footer {
     font-weight: 400; }
     .post-template .post .post-content a:hover, .post-template .post .post-content a:focus {
       cursor: pointer; }
+    .post-template .post .post-content a b, .post-template .post .post-content a strong {
+      font-weight: 500; }
   .post-template .post .post-footer {
     position: relative;
     display: flex;
