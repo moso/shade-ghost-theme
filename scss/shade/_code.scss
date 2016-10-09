@@ -1,0 +1,10 @@
+// PrismJS Predawn theme made by me, inspired by Predawn by Jamie Wilson
+@import 'https://moso.io/sri/themes/predawn.css';
+
+// PrismJS Predawn theme overrides
+// Basically just a different background and some padding
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: $header-bg;
+  padding: 1rem;
+}
