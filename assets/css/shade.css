@@ -309,6 +309,10 @@ footer {
   .post-template .post .post-content h2, .post-template .post .post-content h3, .post-template .post .post-content h4, .post-template .post .post-content h5, .post-template .post .post-content h6 {
     margin-top: 10px;
     margin-bottom: 20px; }
+  .post-template .post .post-content a {
+    font-weight: 400; }
+    .post-template .post .post-content a:hover, .post-template .post .post-content a:focus {
+      cursor: pointer; }
   .post-template .post .post-footer {
     position: relative;
     display: flex;
