@@ -38,6 +38,7 @@
     }
     @media (min-width: 992px) {
       width: 25%;
+      max-width: 240px;
     }
     &.reveal {
       transform: translateX(0%);
