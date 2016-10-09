@@ -15,6 +15,10 @@ header {
     height: 100%;
   }
 
+  img {
+    min-width: 370px;
+  }
+
   h1.blog-title {
     margin: 10px 0;
     font-size: $font-size-h1;
