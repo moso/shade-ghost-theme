@@ -8,6 +8,7 @@
 @import 'shade/variables';
 @import 'shade/mixins';
 
+
 // Core CSS
 @import 'shade/basics';
 @import 'shade/typography';
@@ -16,9 +17,16 @@
 @import 'shade/footer';
 @import 'shade/buttons';
 
+
 // Posts and single posts
 @import 'shade/posts';
 @import 'shade/single-posts';
 
+
 // Animations
 @import 'shade/animations';
+
+
+// Prism
+@import 'shade/thirdparty/prism';
+@import 'shade/prism-overrides';
