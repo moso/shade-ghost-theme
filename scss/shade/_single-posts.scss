@@ -62,6 +62,10 @@
         &:focus {
           cursor: pointer;
         }
+
+        b, strong {
+          font-weight: 500;
+        }
       }
     }
 
