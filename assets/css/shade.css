@@ -89,6 +89,13 @@ a {
   a:hover, a:focus {
     color: rgba(255, 255, 255, 0.54); }
 
+pre, code {
+  font-family: "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace; }
+
+.tag {
+  font-size: 100%;
+  padding: 0; }
+
 .navbar {
   position: fixed;
   width: 100%;

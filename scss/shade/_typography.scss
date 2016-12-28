@@ -74,3 +74,13 @@ a {
     color: rgba(255,255,255,.54);
   }
 }
+
+pre, code {
+  font-family: $font-family-code;
+}
+
+// Fix bootstrap .tag fuckup so PrismJS looks pretty again
+.tag {
+  font-size: 100%;
+  padding: 0;
+}
