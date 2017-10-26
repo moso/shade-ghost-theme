@@ -1,21 +1,38 @@
 {
-  "name": "shade-ghost-theme-dev",
-  "version": "1.1.0",
-  "description": "null",
-  "main": "gulpfile.js",
+  "name": "shade-ghost-theme",
+  "version": "2.0.0",
+  "description": "Repository for the Shade Ghost theme",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.9"
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "laravel-mix": "^1.5.1",
+    "mdi": "^2.0.46",
+    "popper.js": "^1.12.6",
+    "prismjs": "^1.8.3"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moso/shade-ghost-theme.git"
+    "url": "git+https://github.com/moso/shade-ghost-theme/shade-ghost-theme.git"
   },
-  "author": [
-    "Morten Sørensen (morten@moso.io)"
+  "keywords": [
+    "ghost",
+    "ghost theme"
   ],
+  "author": {
+    "name": "Morten Sørensen",
+    "email": "morten@moso.io",
+    "url": "https://moso.io"
+  },
   "license": "MIT (https://github.com/moso/shade-ghost-theme/blob/master/LICENSE)",
-  "homepage": "https://github.com/moso/shade-ghost-theme"
+  "bugs": {
+    "url": "https://github.com/moso/shade-ghost-theme/issues"
+  },
+  "homepage": "https://shade.moso.io"
 }
