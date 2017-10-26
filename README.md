@@ -1,6 +1,6 @@
 # Shade
 
-Simple theme for my website using [Ghost](http://github.com/tryghost/ghost/).
+Simple dark theme for [Ghost](http://github.com/tryghost/ghost/) 1.x.
 
 # Features
 
