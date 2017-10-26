@@ -21,7 +21,7 @@ Do your edits, and then compile the Sass to CSS and the JS with webpack (Laravel
 npm run dev
 ```
 
-To get watch and browserSync running:
+To get watch running:
 ```
 npm run watch
 ```
