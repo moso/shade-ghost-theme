@@ -1,40 +1,114 @@
+// LOGO BOUNCE-IN-DOWN ANIMATION
 .animated {
-  -webkit-animation-fill-mode: both;
-     -moz-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-     -moz-animation-duration: 1s;
-          animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
 }
 
 .animated.hinge {
-  -webkit-animation-duration: 2s;
-     -moz-animation-duration: 2s;
-          animation-duration: 2s;
+    animation-duration: 2s;
 }
 
-@include keyframes(bounceInDown) {
-  0% {
-    opacity: 0;
-    transform: translateY(-2000px);
-  }
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px);
+    }
 
-  60% {
-    opacity: 1;
-    transform: translateY(30px);
-  }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
 
-  80% {
-    transform: translateY(-10px);
-  }
+    80% {
+        transform: translateY(-10px);
+    }
 
-  100% {
-    transform: translateY(0);
-  }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .bounceInDown {
-  -webkit-animation-name: bounceInDown;
-     -moz-animation-name: bounceInDown;
-          animation-name: bounceInDown;
+    animation-name: bounceInDown;
+}
+
+// NAVBAR-TOGGLER ANIMATION
+@keyframes topbar-x {
+    0% {
+        top: 0px;
+        transform: rotate(0deg);
+    }
+
+    45% {
+        top: 6px;
+        transform: rotate(145deg);
+    }
+
+    75% {
+        transform: rotate(130deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes topbar-back {
+    0% {
+        top: 6px;
+        transform: rotate(135deg);
+    }
+
+    45% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        top: 0px;
+        transform: rotate(0);
+    }
+}
+
+@keyframes bottombar-x {
+    0% {
+        bottom: 0px;
+        transform: rotate(0deg);
+    }
+
+    45% {
+        bottom: 6px;
+        transform: rotate(-145deg);
+    }
+
+    75% {
+        transform: rotate(-130deg);
+    }
+
+    100% {
+        transform: rotate(-135deg);
+    }
+}
+
+@keyframes bottombar-back {
+    0% {
+        bottom: 6px;
+        transform: rotate(-135deg);
+    }
+
+    45% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        bottom: 0px;
+        transform: rotate(0);
+    }
 }
