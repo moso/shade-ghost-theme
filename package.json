@@ -12,10 +12,10 @@
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "jquery": "^3.2.1",
-    "laravel-mix": "^1.5.1",
-    "mdi": "^2.0.46",
-    "popper.js": "^1.12.6",
-    "prismjs": "^1.8.3"
+    "laravel-mix": "^1.7.2",
+    "mdi": "^2.1.19",
+    "popper.js": "^1.12.9",
+    "prismjs": "^1.9.0"
   },
   "repository": {
     "type": "git",
