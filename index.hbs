@@ -7,36 +7,38 @@
 
 {{! The big featured header on the homepage, with the site logo and description }}
 <header>
-  <div class="animated bounceInDown">
-    <div class="inner">
-      {{#if @blog.logo}}<a href="{{@blog.url}}">
-        <img src="{{@blog.logo}}" alt="Blog Logo">
-      </a>{{/if}}
-      <h1 class="blog-title">{{@blog.title}}</h1>
-      <h2 class="blog-description">{{@blog.description}}</h2>
+    <div class="animated bounceInDown">
+        <div class="inner">
+            {{#if @blog.logo}}
+            <a href="{{@blog.url}}">
+                <img src="{{@blog.logo}}" alt="Blog Logo">
+            </a>
+            {{/if}}
+            <h1 class="blog-title">{{@blog.title}}</h1>
+            <h2 class="blog-description">{{@blog.description}}</h2>
+        </div>
     </div>
-  </div>
 </header>
 
 {{! The main content area on the homepage }}
 <main class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10 offset-md-1">
-        {{! Each post will be output using this markup }}
-        {{#foreach posts}}
-        <article class="{{post_class}}">
-          <div class="post-header">
-            <span class="post-meta"><time datetime="{{date format='DD. MMM, YYYY'}}">{{date format="DD. MMM, YYYY"}}</time>{{#if tags}} on {{tags}}{{/if}}</span>
-            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-          </div>
-          <section class="post-excerpt">
-            <p>{{excerpt}} &hellip;</p>
-            <p><a href="{{url}}" class="btn btn-ghost">Read more</a></p>
-          </section>
-        </article>
-        {{/foreach}}
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="md-10 offset-md-1">
+                {{! Each post will be output using this markup }}
+                {{#foreach posts}}
+                <article class="{{post_class}}">
+                    <div class="post-header">
+                        <span class="post-meta"><time datetime="{{date format='DD. MMM, YYYY'}}">{{date format="DD. MMM, YYYY"}}</time>{{#if tags}} on {{tags}}{{/if}}</span>
+                        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                    </div>
+                    <div class="post-excerpt">
+                        <p>{{excerpt}} &hellip;</p>
+                        <p><a href="{{url}}" class="btn btn-ghost">Read more</a></p>
+                    </div>
+                </article>
+                {{/foreach}}
+            </div>
+        </div>
     </div>
-  </div>
 </main>
