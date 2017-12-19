@@ -1,3 +1,13 @@
+// jQuery
+global.jQuery = require('jquery');
+var $ = global.jQuery;
+window.$ = $;
+
+// Popper.js
+import Popper from 'popper.js';
+window.Popper = Popper;
+
+
 // SIDEBAR
 var window_height;
 var window_width;
