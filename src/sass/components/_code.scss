@@ -1,5 +1,170 @@
 // PrismJS Predawn theme made by me, inspired by Predawn by Jamie Wilson
-@import 'https://moso.io/sri/themes/predawn.css';
+.color-accent { color: #F18260; }
+
+.color-white { color: #fff; }
+
+.color-grey { color: #ccc; }
+
+.color-black { color: #222; }
+
+.color-inherit { color: inherit; }
+
+.color-transparent { color: transparent; }
+
+pre {
+    margin-bottom: 1rem;
+
+    &::-webkit-scrollbar {
+        height: 12px;
+        width: 12px;
+        overflow: visible;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #F18260;
+        border: 5px solid #222;
+    }
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+    position: relative;
+    color: #EDE480;
+
+    &.language-markup,
+    &.language-html,
+    &.language-javascript {
+        color: #fff;
+    }
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata,
+.token.entity,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string {
+    color: #777;
+}
+
+.token.property,
+.language-markup .token.punctuation {
+    color: #92BFBF;
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted,
+.language-css .token.selector,
+.language-scss .token.selector {
+    color: #B4D388;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.language-clike .token.boolean,
+.language-javascript .token.keyword,
+.language-javascript .token.number,
+.language-css .token.keyword,
+.language-scss .token.keyword {
+    color: #EDE480;
+}
+
+.token.punctuation {
+    color: #F4F4F4;
+}
+
+.token.attr-value,
+.token.keyword,
+.language-clike .token.string,
+.language-javascript .token.string {
+    color: #BDDCDC;
+}
+
+.token.operator,
+.token.atrule,
+.token.function,
+.token.url,
+.token.regex,
+.token.variable {
+    color: #F49D62;
+}
+
+.token.important {
+    color: #CF5340;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre[class*='language-'][data-language]::before {
+    content: attr(data-language);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 8px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 10px;
+    background: #444;
+    color: #ccc;
+    text-transform: uppercase;
+    border-radius: 0 0 0 5px;
+}
+
+.no-indicator:before {
+    display: none;
+}
+
+pre.line-numbers {
+    padding-left: 4.5em;
+    counter-reset: linenumber;
+
+    & > code {
+        position: relative;
+    }
+
+    .line-numbers-rows {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        left: -4.5em;
+        width: 3em;
+        border-right: 1px solid #444;
+        user-select: none;
+
+        & > span {
+            pointer-events: none;
+            display: block;
+            counter-increment: linenumber;
+
+            &:before {
+                content: counter(linenumber);
+                color: #5e5e5e;
+                display: block;
+                padding-right: 0.8em;
+                text-align: right;
+            }
+        }
+    }
+}
 
 // PrismJS Predawn theme overrides
 // Basically just a different background and some padding
