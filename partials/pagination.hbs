@@ -1,0 +1,14 @@
+<nav aria-label="Pagination">
+    <ul class="pagination">
+        {{#if prev}}
+            <li class="page-item mr-auto">
+                <a href="{{page_url prev}}" class="page-link"><i class="mdi mdi-chevron-double-left"></i> Newer posts</a>
+            </li>
+        {{/if}}
+        {{#if next}}
+            <li class="page-item ml-auto">
+                <a href="{{page_url next}}" class="page-link">Older posts <i class="mdi mdi-chevron-double-right"></i></a>
+            </li>
+        {{/if}}
+    </ul>
+</nav>
