@@ -1,24 +1,26 @@
+// Footer
 footer {
-  margin: 40px 0 0;
-  padding: 40px 0;
-  border-top: 1px solid $border-color;
-  color: darken($text-color, 20%);
-  text-align: center;
-  background-color: $footer-bg;
-
-  @media (max-width: 500px) {
-    margin-top: 40px;
+    margin: 40px 0 0;
+    padding: 40px 0;
+    background-color: $footer-bg;
+    border-top: 1px solid $border-color;
     font-size: .6875rem;
-  }
+    color: darken($text-color, 20%);
+    text-align: center;
 
-  a {
-    color: $text-color;
-    text-decoration: none;
-    @include transition(color .2s ease);
-    &:hover,
-    &:focus {
-      color: lighten($text-color, 10%);
-      cursor: pointer;
+    @media (min-width: 576px) {
+        font-size: 1rem;
     }
-  }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        transition: color .2s ease;
+
+        &:hover,
+        &:focus {
+            color: lighten($text-color, 10%);
+            cursor: pointer;
+        }
+    }
 }
