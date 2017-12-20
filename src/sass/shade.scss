@@ -5,8 +5,8 @@
  */
 
 // Core variables and mixins
-@import 'shade/variables';
-@import 'shade/mixins';
+@import 'variables';
+@import 'mixins';
 
 
 // Bootstrap components
@@ -20,22 +20,25 @@
 
 
 // Core CSS
-@import 'shade/basics';
-@import 'shade/typography';
-@import 'shade/navigation';
-@import 'shade/header';
-@import 'shade/footer';
-@import 'shade/buttons';
+@import 'basics';
+@import 'typography';
+
+
+// Components
+@import 'components/navigation';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
 
 
 // Posts and single posts
-@import 'shade/posts';
-@import 'shade/single-posts';
+@import 'components/posts';
+@import 'components/single-posts';
 
 
 // Animations
-@import 'shade/animations';
+@import 'components/animations';
 
 
 // Prism
-@import 'shade/code';
+@import 'components/code';
