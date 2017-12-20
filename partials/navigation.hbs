@@ -1,17 +1,32 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12">
-      <nav class="navbar">
-        <button class="navbar-toggler pull-xs-right" type="button" aria-label="Toggle navigation">&#9776;</button>
-        <ul class="navbar-side">
-          {{#foreach navigation}}
-            <li class="navbar-side-item">
-              <a href="{{url absolute="true"}}">{{label}}</a>
-            </li>
-          {{/foreach}}
-        </ul>
-        <div class="overlay"></div>
-      </nav>
+<nav class="navbar navbar-toggleable-md fixed-top navbar-shade">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button id="navbar-toggle" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#sidenav" aria-controls="sidenav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar bar1"></span>
+                <span class="icon-bar bar2"></span>
+                <span class="icon-bar bar3"></span>
+            </button>
+            <a href="/">
+            {{#if blog_logo}}
+                {{@blog.logo}}
+            {{else}}
+                <h1>{{@blog.title}}</h1>
+            {{/if}}
+            </a>
+            <div class="collapse navbar-collapse" id="sidenav">
+                <ul class="navbar-nav">
+                {{#if blog_logo}}
+                    <li class="nav-image">
+                        {{@blog.logo}}
+                    </li>
+                {{/if}}
+                {{#foreach navigation}}
+                    <li class="nav-{{slug}} navbar-side-item{{#if current}} nav-current{{/if}}">
+                        <a href="{{url absolute="true"}}">{{label}}</a>
+                    </li>
+                {{/foreach}}
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</nav>
