@@ -1,34 +1,35 @@
 // Header
 header {
-  display: flex;
-  flex-direction: column;
-  height: calc(60% + 68px); // 60% + navbar height
-  background-color: $header-bg;
-  color: $header-text-color;
-  text-align: center;
-  z-index: 0;
-
-  > div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+    flex-direction: column;
+    height: calc(60% + 68px); // 60% + navbar height - needs $variable
+    background-color: $header-bg;
+    color: $header-text-color;
+    text-align: center;
+    z-index: 0;
 
-  img {
-    min-width: 370px;
-  }
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
-  h1.blog-title {
-    margin: 10px 0;
-    font-size: $font-size-h1;
-    letter-spacing: -1px;
-  }
-  h2.blog-description {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: $line-height;
-    font-weight: 300;
-    letter-spacing: 0;
-  }
+    img {
+        min-width: 370px;
+    }
+
+    .blog-title {
+        margin: 10px 0;
+        font-size: $font-size-h1;
+        letter-spacing: -1px;
+    }
+
+    .blog-description {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: $line-height;
+        letter-spacing: 0;
+    }
 }
