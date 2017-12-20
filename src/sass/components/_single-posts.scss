@@ -1,106 +1,115 @@
 // Single post
 .post-template {
-  header {
-    height: 30%;
-    margin-bottom: 25px;
+    header {
+        height: 30%;
+        margin-bottom: 25px;
 
-    img {
-      max-height: 100px;
-    }
-  }
-
-  .post {
-    margin: 0 auto;
-    border-bottom: 0;
-    padding-bottom: 0;
-    position: relative;
-    word-break: break-word;
-
-    .post-meta {
-      display: inline-block;
-      margin: 0 0 5px 0;
-      font-size: 1rem;
-      color: $meta-color;
-      @include transition(color .2s ease);
-
-      @media (max-width: 500px) {
-        font-size: .875rem;
-      }
-
-      a {
-        color: $meta-color;
-        text-decoration: none;
-        &:hover,
-        &:focus {
-          color: $meta-hover-color;
-          text-decoration: underline;
+        img {
+            max-height: 100px;
         }
-      }
     }
 
-    .post-title {
-      margin: 0;
-      color: $heading-color;
-    }
+    .post {
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 0;
+        border-bottom: 0;
+        word-break: break-word;
 
-    .post-content {
-      p {
-        margin: 1rem 0 0;
-        &:last-of-type {
-          margin: 0;
+        .post-meta {
+            display: inline-block;
+            margin: 0 0 5px 0;
+            font-size: .875rem;
+
+            color: $meta-color;
+            transition: color .2s ease;
+
+            @media (min-width: 576px) {
+                font-size: 1rem;
+            }
+
+            a {
+                color: $meta-color;
+                text-decoration: none;
+
+                &:hover,
+                &:focus {
+                    color: $meta-hover-color;
+                    text-decoration: underline;
+                }
+            }
         }
-      }
 
-      h2, h3, h4, h5, h6 {
-        margin-top: 10px;
-        margin-bottom: 20px;
-      }
-
-      a {
-        font-weight: 400;
-        &:hover,
-        &:focus {
-          cursor: pointer;
-        }
-      }
-
-      b, strong {
-        font-weight: 500;
-      }
-    }
-
-    .post-footer {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin: 2.5rem 0 0;
-      padding: 1.5rem 0 0;
-      border-top: 2px solid $border-color;
-
-      @media (max-width: 500px) {
-        padding: 40px 0;
-        text-align: center;
-      }
-
-      .share {
-        text-align: right;
-        a {
-          margin-right: 10px;
-          &:last-of-type {
+        .post-title {
             margin: 0;
-          }
+            color: $heading-color;
         }
-         i.mdi {
-          color: darken($text-color, 10%);
-          font-size: 1.5rem;
-          @include transition(color .2s);
-          &:hover,
-          &:focus {
-            color: darken($text-color, 25%);
-          }
+
+        .post-content {
+            p {
+                margin: 1rem 0 0;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+
+            h2, h3, h4, h5, h6 {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            a {
+                font-weight: 400;
+
+                &:hover,
+                &:focus {
+                    cursor: pointer;
+                }
+            }
+
+            b, strong {
+                font-weight: 500;
+            }
         }
-      }
+
+        .post-footer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 2.5rem 0 0;
+            padding: 40px 0;
+            border-top: 2px solid $border-color;
+            text-align: center;
+
+            @media (min-width: 576px) {
+                padding: 1.5rem 0 0;
+                text-align: initial;
+            }
+
+            .share {
+                text-align: right;
+
+                a {
+                    margin-right: 10px;
+
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
+
+                i.mdi {
+                    color: darken($text-color, 10%);
+                    font-size: 1.5rem;
+                    transition: color .2s;
+
+                    &:hover,
+                    &:focus {
+                        color: darken($text-color, 25%);
+                    }
+                }
+            }
+        }
     }
-  }
 }
