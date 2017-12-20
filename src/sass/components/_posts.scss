@@ -1,65 +1,71 @@
 // Posts
 .post {
-  margin: 2.5rem auto;
-  padding-bottom: 1rem;
-  border-bottom: $border-color 1px solid;
-  font-size: 1.125rem;
-  word-break: break-word;
-
-  @media (max-width: 900px) {
-    font-size: 1rem;
-    line-height: 1;
-  }
-  @media (max-width: 500px) {
-    width: auto;
+    margin: 2.5rem auto;
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: $border-color 1px solid;
     font-size: .875rem;
     line-height: 1;
-  }
+    word-break: break-word;
 
-  .post-header {
-    .post-title {
-      margin: 0 0 .5rem;
-      color: $heading-color;
-      font-size: 2.5rem;
-      line-height: 3.75rem;
-      a {
-        color: $heading-color;
-        @include transition(color .2s ease);
-        &:hover,
-        &:focus {
-          color: $heading-hover-color;
-          cursor: pointer;
+    @media (min-width: 576px) {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.125rem;
+    }
+
+    .post-header {
+        .post-title {
+            margin: 0 0 .5rem;
+            color: $heading-color;
+            font-size: 2.5rem;
+            line-height: 3.75rem;
+
+            a {
+                color: $heading-color;
+                transition: color .2s ease;
+
+                &:hover,
+                &:focus {
+                    color: $heading-hover-color;
+                    cursor: pointer;
+                }
+            }
         }
-      }
-    }
 
-    .post-meta {
-      display: inline-block;
-      margin: 0 0 5px 0;
-      font-size: 1rem;
-      color: $meta-color;
-      a {
-        color: $meta-color;
-        text-decoration: none;
-        @include transition(color .2s ease);
-        &:hover,
-        &:focus {
-          color: $meta-hover-color;
-          text-decoration: underline;
+        .post-meta {
+            display: inline-block;
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            color: $meta-color;
+
+            a {
+                color: $meta-color;
+                text-decoration: none;
+                transition: color .2s ease;
+
+                &:hover,
+                &:focus {
+                    color: $meta-hover-color;
+                    text-decoration: underline;
+                }
+            }
         }
-      }
     }
-  }
 
-  .post-excerpt {
-    p {
-      margin: 0 0 1rem;
-      line-height: 2rem;
-      &:last-of-type {
-        margin: 0;
-      }
+    .post-excerpt {
+        p {
+            margin: 0 0 1rem;
+            line-height: 2rem;
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
     }
-  }
 }
