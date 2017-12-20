@@ -2,21 +2,24 @@
 
 Simple dark theme for [Ghost](http://github.com/tryghost/ghost/) 1.x.
 
-# Features
+## Features
 
-- Bootstrap 4 beta 2 and Flexbox.
-- Pure CSS (Sass included).
-- Infinite scrolling (no pagination).
-- Websafe fonts: [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab) for headings and [Roboto](https://fonts.google.com/specimen/Roboto) for main text.
-- Syntax highlighting with [PrismJS](https://github.com/PrismJS/prism) and selfmade theme inspired by [Predawn](https://github.com/jamiewilson/predawn).
+- Fully hackable
+- [Flexgrid](https://github.com/moso/flexgrid) for rigid, flexbox gridsystem
+- Bootstrap 4 components
+- Offcanvas navigation
+- Pure CSS (Sass included)
+- Infinite scrolling (no pagination)
+- Websafe fonts: [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab) for headings and [Roboto](https://fonts.google.com/specimen/Roboto) for main text
+- Syntax highlighting with [PrismJS](https://github.com/PrismJS/prism) and selfmade theme inspired by [Predawn](https://github.com/jamiewilson/predawn)
 
-You can find a live example [here](https://shade.moso.io).
+DEMO: You can find a live example here: [shade.moso.io](https://shade.moso.io).
 
-# Editing the source
+## Editing the source
 Install the node modules:
 `npm install` or `yarn add`
 
-Do your edits, and then compile the Sass to CSS and the JS with webpack (Laravel Mix):
+Do your edits, and then compile the Sass to CSS and bundle the JS with webpack:
 ```
 npm run dev
 ```
@@ -31,5 +34,5 @@ To compile for production which includes minification of both CSS and JS:
 npm run production
 ```
 
-# Issues?
+## Issues?
 Please report any issues and missing stuff.
