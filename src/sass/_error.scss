@@ -1,0 +1,40 @@
+// Error
+.error-page {
+    .error-message {
+        text-align: center
+    }
+
+    .error-code {
+        margin: 0;
+        font-size: 12vw;
+        letter-spacing: -5px;
+        opacity: .3
+    }
+
+    .error-description {
+        margin: 5px 0 0;
+        color: $text-color;
+        font-size: 1.125rem;
+        font-weight: 400;
+
+        @media (min-width: 992px) {
+            margin: 0;
+            font-size: 2rem;
+        }
+    }
+
+    .error-link {
+        display: inline-block;
+        margin-top: 5px
+    }
+
+    .error-stack {
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        .error-stack-list {
+            padding: 0;
+        }
+    }
+}
