@@ -33,5 +33,16 @@ To compile for production which includes minification of both CSS and JS:
 npm run production
 ```
 
+## Extending PrismJS syntax highlighting
+By default, [PrismJS](https://github.com/PrismJS/prism) highlights `HTML`, `CSS`, `JavaScript`, and shell-like syntax. This theme adds `Markdown`, `PHP`, `Sass`, and `SCSS` to this list. If you wish to add further languages to its syntax highlight, you can extend this by editing `src/js/shade.js`, and add more imports below the `// PrismJS`-line.
+
+You can find all the languages that ship with PrismJS inside `node_modules/prismjs/components`. Be aware that some languages extends other languages - they have dependencies, so to say.
+
+You can also opt for other syntax highlight themes by importing the CSS-file directly into `shade.js` aswell.
+
+Example: `import 'prismjs/themes/okaidia.css'`
+
+However you will have to remove the `@import 'components/code'`-line from `src/sass/shade.scss` for that to kick in.
+
 ## Issues?
 Please report any issues and missing stuff.
