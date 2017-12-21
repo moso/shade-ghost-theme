@@ -26,6 +26,10 @@ mix.js('src/js/shade.js', 'js/')
        processCssUrls: false
    });
 
+mix.then(() => {
+    copy('node_modules/mdi/fonts/*.*', 'fonts/')
+});
+
 // Full API
 // mix.js(src, output);
 // mix.react(src, output); <-- Identical to mix.js(), but registers React Babel compilation.
