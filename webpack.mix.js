@@ -24,11 +24,8 @@ mix.js('src/js/shade.js', 'js/')
    .extract(['jquery', 'popper.js', 'bootstrap'])
    .options({
        processCssUrls: false
-   });
-
-mix.then(() => {
-    copy('node_modules/mdi/fonts/*.*', 'fonts/')
-});
+   })
+   .copy('node_modules/mdi/fonts/*.*', 'assets/fonts/');
 
 // Full API
 // mix.js(src, output);
