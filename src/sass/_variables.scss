@@ -3,45 +3,52 @@
 // -----------------------------
 
 // Colors
-$body-bg:               #37474F !default;
-$header-bg:             #263238 !default;
-$footer-bg:             $header-bg !default;
-$navbar-bg:             $header-bg !default;
-$nav-side-bg:           $body-bg !default;
+$body-bg:                   #37474F !default;
+$header-bg:                 #263238 !default;
+$footer-bg:                 $header-bg !default;
+$navbar-bg:                 $header-bg !default;
+$nav-side-bg:               $body-bg !default;
 
-$text-color:            #CFD8DC !default;
-$header-text-color:     darken($text-color, 15%) !default;
+$text-color:                #CFD8DC !default;
+$header-text-color:         darken($text-color, 15%) !default;
 
-$heading-color:         #90A4AE !default;
-$heading-hover-color:   #B0BEC5 !default;
+$heading-color:             #90A4AE !default;
+$heading-hover-color:       #B0BEC5 !default;
 
-$meta-color:            #607D8B !default;
-$meta-hover-color:      lighten($meta-color, 10%) !default;
-$meta-tag-color:        #B0BEC5 !default;
+$meta-color:                #607D8B !default;
+$meta-hover-color:          lighten($meta-color, 10%) !default;
+$meta-tag-color:            #B0BEC5 !default;
 
-$border-color:          rgba(255,255,255,.05) !default;
+$border-color:              rgba(255,255,255,.05) !default;
 
-$code-bg:               #263238 !default;
+$code-bg:                   #263238 !default;
 
-$pagination-bg:         #263238 !default;
+$pagination-bg:             #263238 !default;
 
 // Fonts
-@import 'https://cdn.cloudcache.dk/fonts/roboto-slab/css/roboto-slab.css';
-@import 'https://cdn.cloudcache.dk/fonts/roboto-draft/css/roboto-draft.css';
-@import 'https://cdn.cloudcache.dk/fonts/liberation-mono/css/liberation-mono.css';
-@import 'https://cdn.cloudcache.dk/materialdesignicons/1.6.50/css/materialdesignicons.min.css';
+$font-family:               "Roboto Draft", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-heading:       "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
+$font-family-code:          "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
+$font-size-root:            16px !default;
+$font-size:                 1.125rem !default;  // 18px
 
-$font-family:           "Roboto Draft", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-heading:   "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
-$font-family-code:      "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
-$font-size-root:        16px !default;
-$font-size:             1.125rem !default;  // 18px
+$font-size-h1:              3.125rem !default;  // 50px
+$font-size-h2:              2.5rem !default;    // 40px
+$font-size-h3:              2rem !default;      // 32px
+$font-size-h4:              1.625rem !default;  // 26px
+$font-size-h5:              1.25rem !default;   // 20px
+$font-size-h6:              1rem !default;      // 16px
 
-$font-size-h1:          3.125rem !default;  // 50px
-$font-size-h2:          2.5rem !default;    // 40px
-$font-size-h3:          2rem !default;      // 32px
-$font-size-h4:          1.625rem !default;  // 26px
-$font-size-h5:          1.25rem !default;   // 20px
-$font-size-h6:          1rem !default;      // 16px
+$line-height:               1.5 !default;
 
-$line-height:           1.5 !default;
+// Sidebar
+$sidebar-width:             230px !default;
+$sidebar-bg:                lighten($header-bg, 10%) !default;
+$sidebar-border:            #e3e3e3 !default;
+$sidebar-link-color:        $text-color !default;
+$sidebar-link-hover-color:  darken($text-color, 15%);
+$sidebar-img-height:        80px;
+
+
+// Offcanvas
+$offcanvas-transition:  all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
