@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 mix.setPublicPath('assets/');
 
 mix.js('src/js/shade.js', 'js/')
-   .sass('src/sass/shade.scss', 'css/' {
+   .sass('src/sass/shade.scss', 'css/', {
        outputStyle: 'nested'
    })
    .autoload({
