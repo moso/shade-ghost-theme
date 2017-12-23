@@ -14,5 +14,6 @@ import 'prismjs/components/prism-php.js';
 import 'prismjs/components/prism-sass.js';
 import 'prismjs/components/prism-scss.js';
 
-// Sidebar
+// Components
 import './components/sidebar.js';
+import './components/navnar.js';

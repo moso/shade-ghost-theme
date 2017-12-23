@@ -1,6 +1,12 @@
 // Nav
 .navbar {
     transition: all .5s .1s;
+    //transition: all .3s .1s ease-in-out;
+
+    &.navbar-solid {
+        background-color: $body-bg !important;
+        box-shadow: 0px 0px 12px -3px rgba(0,0,0,.15);
+    }
 
     &.fixed-top {
         position: fixed;
