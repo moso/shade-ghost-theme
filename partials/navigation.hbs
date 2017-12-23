@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="/">
             {{#if @blog.logo}}
-                {{@blog.logo}}
+                <img src="{{@blog.logo}}" alt="{{@blog.title}}">
             {{else}}
                 <h1>{{@blog.title}}</h1>
             {{/if}}
