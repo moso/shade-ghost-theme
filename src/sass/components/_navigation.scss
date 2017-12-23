@@ -1,9 +1,9 @@
 // Nav
 .navbar-shade {
-    .container {
+    .container-fluid {
         position: relative;
         transform: translate3d(0px, 0, 0);
-        transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+        transition: $offcanvas-transition;
 
         @media (max-width: 576px) {
             width: 100%;
@@ -13,12 +13,12 @@
     .navbar-header {
         > .navbar-toggler {
             margin-top: 9px;
-            margin-bottom: 12px;
+            margin-right: 0;
+            margin-bottom: 12px;            
             width: 40px;
             height: 40px;
             border: 0;
-            outline: none;
-            margin-right: 0;
+            outline: none;            
             cursor: pointer;
 
             @media (min-width: 768px) {
