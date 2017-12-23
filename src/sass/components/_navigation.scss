@@ -1,8 +1,10 @@
 // Nav
-.navbar-shade {
+.navbar {
     transition: all .5s .1s;
-    
-    .container-fluid {
+}
+
+.navbar-shade {
+    .container {
         position: relative;
         transform: translate3d(0px, 0, 0);
         transition: $offcanvas-transition;
