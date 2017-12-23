@@ -55,8 +55,6 @@
 
         .post-content {
             p {
-                margin: 1rem 0 0;
-
                 &:last-of-type {
                     margin: 0;
                 }
@@ -83,6 +81,10 @@
             img {
                 width: 100%;
                 height: auto;
+            }
+
+            ul {
+                margin-top: 10px;
             }
         }
 

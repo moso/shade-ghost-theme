@@ -168,8 +168,16 @@ pre.line-numbers {
 
 // PrismJS Predawn theme overrides
 // Basically just a different background and some padding
-:not(pre) > code[class*="language-"],
+:not(pre) > code[class^="language-"],
 pre[class*="language-"] {
   background-color: $header-bg;
   padding: 1rem;
+}
+
+code:not([class^="language-"]) {
+    padding: 3px 6px 2px;
+    background-color: rgba(255,255,255,.1);
+    border-color: rgba(0,0,0,.35);
+    border-radius: 4px;
+    font-size: 85%;
 }
