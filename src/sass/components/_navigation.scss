@@ -37,12 +37,23 @@
         }
 
         > .navbar-toggler {
-            margin-left: auto;         
-            width: 40px;
-            height: 40px;
+            position: relative;
+            margin-left: auto;
+            padding: 0;        
+            width: 25px;
+            height: 25px;
             border: 0;
-            outline: none;            
+            border-radius: 0;
+            outline: none;
             cursor: pointer;
+            z-index: 1030;
+            
+            &:hover,
+            &:focus,
+            &:active,
+            &:hover:active {
+                cursor: pointer;
+            }
 
             @media (min-width: 768px) {
                 display: block;
@@ -122,6 +133,8 @@ body > .navbar-collapse {
     z-index: 1032;
 
     .navbar-side-item {
+        display: block;
+        padding: .5rem 0;
         color: $sidebar-link-color;
         transition: color .2s ease-in-out;
 
@@ -144,7 +157,7 @@ body > #overlay {
     width: 100%;
     opacity: 0;
     overflow-x: hidden;
-    z-index: 1029;
+    //z-index: 1029;
 
     // @media (max-width: 767px) {
     //     right: $sidebar-width;
