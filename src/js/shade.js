@@ -16,4 +16,4 @@ import 'prismjs/components/prism-scss.js';
 
 // Components
 import './components/sidebar.js';
-import './components/navnar.js';
+import './components/navbar.js';
