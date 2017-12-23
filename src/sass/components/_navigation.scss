@@ -4,6 +4,14 @@
 }
 
 .navbar-shade {
+    &.fixed-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;        
+        z-index: 1030;
+    }
+    
     .container {
         position: relative;
         transform: translate3d(0px, 0, 0);
