@@ -154,15 +154,18 @@ body > .navbar-collapse {
     .navbar-side-item {
         display: block;
         padding: .5rem 0;
-        color: $sidebar-link-color;
-        transition: color .2s ease-in-out;
 
-        &:hover,
-        &:focus,
-        &:active,
-        &:hover:active {
-            color: $sidebar-link-hover-color;
-            text-decoration: none;
+        a {
+            color: $sidebar-link-color;
+            transition: color .2s ease-in-out;
+            
+            &:hover,
+            &:focus,
+            &:active,
+            &:hover:active {
+                color: $sidebar-link-hover-color;
+                text-decoration: none;
+            }
         }
     }
 }
