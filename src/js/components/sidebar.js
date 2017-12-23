@@ -105,7 +105,7 @@ $(document).ready(function () {
     }
 
     // Close the sidebar if the user clicks a link
-    $('.nav-link').on('click', function () {
+    $('.navbar-side-item').on('click', function () {
         var $toggle = $('.navbar-toggler');
 
         $('html').removeClass('nav-open');

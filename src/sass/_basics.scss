@@ -34,6 +34,10 @@ pre, code {
     font-family: $font-family-code;
 }
 
+.wrapper {
+    transition: $offcanvas-transition;
+}
+
 // Fix bootstrap .tag fuckup so PrismJS looks pretty again
 .tag {
     font-size: 100%;
