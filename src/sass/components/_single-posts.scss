@@ -20,6 +20,7 @@
             img {
                 width: 100%;
                 height: auto;
+                border-radius: 3px;
             }
         }
 
@@ -36,7 +37,7 @@
             }
 
             a {
-                color: $meta-color;
+                color: lighten($meta-color, 10%);
                 text-decoration: none;
 
                 &:hover,

@@ -162,6 +162,7 @@ body > .navbar-collapse {
         &:active,
         &:hover:active {
             color: $sidebar-link-hover-color;
+            text-decoration: none;
         }
     }
 }
