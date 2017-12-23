@@ -1,11 +1,6 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-shade">
     <div class="container">
         <div class="navbar-header">
-            <button id="navbar-toggle" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#sidenav" aria-controls="sidenav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar bar1"></span>
-                <span class="icon-bar bar2"></span>
-                <span class="icon-bar bar3"></span>
-            </button>
             <a class="navbar-brand" href="/">
             {{#if blog_logo}}
                 {{@blog.logo}}
@@ -13,6 +8,12 @@
                 <h1>{{@blog.title}}</h1>
             {{/if}}
             </a>
+            
+            <button id="navbar-toggle" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#sidenav" aria-controls="sidenav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar bar1"></span>
+                <span class="icon-bar bar2"></span>
+                <span class="icon-bar bar3"></span>
+            </button>
             
             <div class="collapse navbar-collapse" id="sidenav">
                 <ul class="navbar-nav">
