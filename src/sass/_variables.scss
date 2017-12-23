@@ -26,7 +26,8 @@ $code-bg:                   #263238 !default;
 $pagination-bg:             #263238 !default;
 
 // Fonts
-$font-family:               "Roboto Draft", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+@import 'fonts';
+$font-family:               Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-heading:       "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
 $font-family-code:          "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
 $font-size-root:            16px !default;

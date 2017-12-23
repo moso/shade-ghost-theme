@@ -2,11 +2,15 @@
 header {
     display: flex;
     flex-direction: column;
-    height: calc(60% + 68px); // 60% + navbar height - needs $variable
+    height: 100vh;
     background-color: $header-bg;
     color: $header-text-color;
     text-align: center;
     z-index: 0;
+
+    @media (min-width: 992px) {
+        height: calc(60vh + 68px); // 60 view height + navbar height - needs $variable
+    }
 
     > div {
         display: flex;
