@@ -1,5 +1,7 @@
 // Nav
 .navbar-shade {
+    transition: all .5s .1s;
+    
     .container-fluid {
         position: relative;
         transform: translate3d(0px, 0, 0);
