@@ -1,9 +1,7 @@
 // Nav
 .navbar {
     transition: all .5s .1s;
-}
 
-.navbar-shade {
     &.fixed-top {
         position: fixed;
         top: 0;
@@ -11,7 +9,9 @@
         right: 0;        
         z-index: 1030;
     }
-    
+}
+
+.navbar-shade {
     .container {
         position: relative;
         transform: translate3d(0px, 0, 0);
@@ -40,12 +40,12 @@
 
             h1 {
                 margin: 0;
+                font-family: $font-family;
                 font-size: 1.5rem;
             }
         }
 
         > .navbar-toggler {
-            position: relative;
             margin-left: auto;
             padding: 0;        
             width: 25px;
@@ -54,7 +54,6 @@
             border-radius: 0;
             outline: none;
             cursor: pointer;
-            z-index: 1030;
             
             &:hover,
             &:focus,
