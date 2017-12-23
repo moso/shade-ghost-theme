@@ -1,8 +1,12 @@
 // Single post
 .post-template {
     header {
-        height: 30%;
+        height: 100%;
         margin-bottom: 25px;
+
+        @media (min-width: 992px) {
+            height: calc(30vh + 68px)
+        }
 
         img {
             max-height: 100px;
