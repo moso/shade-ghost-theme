@@ -5,13 +5,11 @@ h4, h5, h6 {
     font-family: $font-family-heading;
     font-weight: 400;
     line-height: $line-height;
-    letter-spacing: 2px;
 }
 
 h1 {
     font-size: 3rem;
     line-height: 1;
-    text-indent: -3px;
 
     @media (min-width: 576px) {
         font-size: $font-size-h2;
@@ -20,14 +18,12 @@ h1 {
 
     @media (min-width: 992px) {
         font-size: $font-size-h1;
-        text-indent: -2px;
     }
 }
 
 h2 {
     font-size: 2rem;
     line-height: 1;
-    text-indent: -2px;
 
     @media (min-width: 576px) {
         font-size: $font-size-h3;

@@ -16,14 +16,14 @@ $heading-color:             #90A4AE !default;
 $heading-hover-color:       #B0BEC5 !default;
 
 $meta-color:                #607D8B !default;
-$meta-hover-color:          lighten($meta-color, 10%) !default;
-$meta-tag-color:            #B0BEC5 !default;
+$meta-hover-color:          lighten($meta-color, 18%) !default;
+$meta-tag-color:            $heading-hover-color !default;
 
 $border-color:              rgba(255,255,255,.05) !default;
 
-$code-bg:                   #263238 !default;
+$code-bg:                   $header-bg !default;
 
-$pagination-bg:             #263238 !default;
+$pagination-bg:             $header-bg !default;
 
 // Fonts
 @import 'fonts';
