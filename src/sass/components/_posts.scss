@@ -20,6 +20,13 @@
     }
 
     .post-header {
+        .post-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
         .post-title {
             margin: 0 0 .5rem;
             color: $heading-color;

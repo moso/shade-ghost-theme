@@ -16,6 +16,13 @@
         border-bottom: 0;
         word-break: break-word;
 
+        .post-image {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
         .post-meta {
             display: inline-block;
             margin: 0 0 5px 0;
