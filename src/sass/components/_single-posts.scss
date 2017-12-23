@@ -63,8 +63,8 @@
             }
 
             h2, h3, h4, h5, h6 {
-                margin-top: 10px;
-                margin-bottom: 20px;
+                margin: 10px 0 0;
+                color: $heading-color;
             }
 
             a {
@@ -78,6 +78,11 @@
 
             b, strong {
                 font-weight: 500;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
             }
         }
 
