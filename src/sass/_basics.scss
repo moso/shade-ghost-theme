@@ -38,6 +38,31 @@ hr {
     margin: 1rem 0;
 }
 
+blockquote,
+.blockquote {
+    margin: 20px 0;
+    padding-left: 1.5rem;
+    border-left: 5px solid $border-color;
+
+    p {
+        margin: 0 0 1rem;
+
+        &:last-of-type {
+            margin: 0;
+        }
+
+        & + footer {
+            display: block;
+            font-size: 80%;
+            color: darken($text-color, 25%);
+
+            &:before {
+                content: "\2014 \00A0"
+            }
+        }
+    }
+}
+
 .wrapper {
     transition: $offcanvas-transition;
 }
