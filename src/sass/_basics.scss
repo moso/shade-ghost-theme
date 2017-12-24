@@ -73,6 +73,14 @@ mark,
     color: $body-bg;
 }
 
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
 .wrapper {
     transition: $offcanvas-transition;
 }
