@@ -37,6 +37,7 @@ pre {
 pre[class*="language-"],
 code[class*="language-"] {
     position: relative;
+    padding: 0 1rem !important;
     color: #EDE480;
 
     &.language-markup,
