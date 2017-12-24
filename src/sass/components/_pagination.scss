@@ -7,22 +7,26 @@
         .page-link {
             position: relative;
             display: block;
+            min-width: 7rem;
             margin-left: -1px;
-            padding: .25rem .5rem;
-            background-color: darken($header-bg, 10%);
-            border: 1px solid darken($header-bg, 10%);
+            padding: .5rem 1.125rem;
+            background-color: darken($header-bg, 5%);
+            border: 1px solid transparent;
             border-radius: 2px;
-            font-size: .875rem;
+            font-size: 1rem;
+            font-weight: 400;
             color: darken($text-color, 10%);
             line-height: 1.25;
-            transition: background-color .2s ease-in-out, border-color .2s ease-in-out ;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            transition: background-color .2s ease-in-out;
 
             &:hover,
             &:focus {
                 color: darken($text-color, 10%);
                 text-decoration: none;
-                background-color: darken($header-bg, 5%);
-                border-color: darken($header-bg, 5%);
+                background-color: darken($header-bg, 10%);
             }
         }
 
