@@ -1,11 +1,7 @@
 // jQuery
-global.jQuery = require('jquery');
-var $ = global.jQuery;
+import {$,jQuery} from 'jquery/dist/jquery.slim';
 window.$ = $;
-
-// Popper.js
-import Popper from 'popper.js';
-window.Popper = Popper;
+window.jQuery = jQuery;
 
 // PrismJS
 import Prism from 'prismjs';

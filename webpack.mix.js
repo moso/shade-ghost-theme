@@ -19,9 +19,8 @@ mix.js('src/js/shade.js', 'js/')
    })
    .autoload({
        jquery: ['$', 'jQuery', 'jquery', 'window.jQuery'],
-       'popper.js/dist/umd/popper.js': ['Popper']
    })
-   .extract(['jquery', 'popper.js', 'bootstrap'])
+   .extract('jquery')
    .options({
        processCssUrls: false
    })
