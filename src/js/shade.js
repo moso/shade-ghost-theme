@@ -1,5 +1,5 @@
-// jQuery
-import {$,jQuery} from 'jquery/dist/jquery.slim';
+// jQuery Slim
+import {$, jQuery} from 'jquery/dist/jquery.slim';
 window.$ = $;
 window.jQuery = jQuery;
 
