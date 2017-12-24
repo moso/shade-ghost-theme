@@ -65,9 +65,9 @@ blockquote,
 
 mark,
 .mark {
-    padding: 3px 6px 2px;
-    background-color: rgba(0,0,0,.1);
-    border-color: rgba(255,255,255,.35);
+    padding: 3px 6px;
+    background-color: rgba(255,255,255,.75);
+    border-color: rgba(0,0,0,.35);
     border-radius: 4px;
     font-size: 85%;
     color: $body-bg;
