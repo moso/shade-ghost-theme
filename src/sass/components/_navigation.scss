@@ -45,6 +45,13 @@
                 flex-direction: row;
             }            
         }
+
+        .navbar-collapse {
+            @media (min-width: 992px) {
+                display: flex !important;
+                flex-basis: auto;
+            }
+        }
     }    
 
     &.navbar-solid {
@@ -211,6 +218,12 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
 }
 
 body > .navbar-collapse {
