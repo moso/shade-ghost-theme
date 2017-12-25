@@ -1,38 +1,43 @@
 //
-// Shade Ghost theme variables
-// -----------------------------
+// Shade variables
+// 
 
 // Colors
-$body-bg:                   #37474F !default;
-$header-bg:                 #263238 !default;
-$footer-bg:                 $header-bg !default;
-$navbar-bg:                 $header-bg !default;
-$nav-side-bg:               $body-bg !default;
+$gray:                      #607D8B !default;
+$gray-light:                #90a4ae !default;
+$gray-lighter:              #b0bec5 !default;
+$gray-lightest:             #cfd8dc !default;
+$gray-dark:                 #37474f !default;
+$gray-darker:               #263238 !default;
 
-$text-color:                #CFD8DC !default;
+$body-bg:                   $gray-dark !default;
+$header-bg:                 $gray-darker !default;
+$footer-bg:                 $gray-darker !default;
+
+$text-color:                $gray-lightest !default;
 $header-text-color:         darken($text-color, 15%) !default;
 
-$heading-color:             #90A4AE !default;
-$heading-hover-color:       #B0BEC5 !default;
+$heading-color:             $gray-light !default;
+$heading-hover-color:       $gray-lighter !default;
 
-$meta-color:                #607D8B !default;
+$meta-color:                $gray !default;
 $meta-hover-color:          lighten($meta-color, 18%) !default;
-$meta-tag-color:            $heading-hover-color !default;
+$meta-tag-color:            $gray-lighter !default;
 
 $border-color:              rgba(255,255,255,.05) !default;
 
-$code-bg:                   $header-bg !default;
+$code-bg:                   $gray-darker !default;
 
-$pagination-bg:             $header-bg !default;
+$pagination-bg:             $gray-darker !default;
 
 // Fonts
 @import 'fonts';
-$font-family:               Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family:               "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-heading:       "Roboto Slab", Georgia, "Times New Roman", Times, serif !default;
 $font-family-code:          "Liberation Mono", Menlo, Consolas, Monaco, "Lucida Console", monospace !default;
+
 $font-size-root:            16px !default;
 $font-size:                 1.125rem !default;  // 18px
-
 $font-size-h1:              3.125rem !default;  // 50px
 $font-size-h2:              2.5rem !default;    // 40px
 $font-size-h3:              2rem !default;      // 32px
@@ -44,12 +49,10 @@ $line-height:               1.5 !default;
 
 // Sidebar
 $sidebar-width:             230px !default;
-$sidebar-bg:                lighten($header-bg, 10%) !default;
-$sidebar-border:            #e3e3e3 !default;
+$sidebar-bg:                lighten($gray-darker, 10%) !default;
 $sidebar-link-color:        $text-color !default;
 $sidebar-link-hover-color:  darken($text-color, 15%);
 $sidebar-img-height:        80px;
-
 
 // Offcanvas
 $offcanvas-transition:  all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);

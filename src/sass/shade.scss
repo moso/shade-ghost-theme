@@ -8,25 +8,22 @@
 @import 'variables';
 @import 'mixins';
 
-
 // Bootstrap components
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/navbar';
-@import '~bootstrap/scss/buttons';
-
-
-// Flexgrid
-@import '~flexgrid.co/src/flexgrid';
-
+//@import '~bootstrap/scss/functions';
+//@import '~bootstrap/scss/mixins';
+//@import '~bootstrap/scss/variables';
+//@import '~bootstrap/scss/reboot';
+//@import '~bootstrap/scss/navbar';
+//@import '~bootstrap/scss/buttons';
 
 // Core CSS
+@import '~normalize.css/normalize';
 @import 'basics';
 @import 'typography';
 @import 'error';
 
+// Flexgrid
+@import '~flexgrid.co/src/flexgrid';
 
 // Components
 @import 'components/navigation';
@@ -35,19 +32,15 @@
 @import 'components/buttons';
 @import 'components/pagination';
 
-
 // Posts and single posts
 @import 'components/posts';
 @import 'components/single-posts';
 
-
 // Animations
 @import 'components/animations';
 
-
 // PrismJS syntax highlight
 @import 'components/code';
-
 
 // Material Design Icons
 @import '~mdi/scss/materialdesignicons';

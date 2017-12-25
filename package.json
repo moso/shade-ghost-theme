@@ -10,7 +10,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "bootstrap": "^4.0.0-beta.2",
     "flexgrid.co": "^2.5.0",
     "jquery": "^3.2.1",
     "laravel-mix": "^1.7.2",

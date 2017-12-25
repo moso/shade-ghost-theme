@@ -1,15 +1,22 @@
 // Buttons
 .btn {
-    // Additions to- and fixes for the common Bootstrap button
+    display: inline-block;
     min-width: 7rem;
-    color: darken($text-color, 10%);
     padding: .5rem 1.125rem; // 8px 18px
+    border: 1px solid transparent;
     border-radius: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: darken($text-color, 10%); 
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
     transition: background-color .2s ease;
 }
 
 .btn-ghost {
-    // Not confused with the ghost button (outline)
     background-color: darken($header-bg, 5%);
 
     &:hover,

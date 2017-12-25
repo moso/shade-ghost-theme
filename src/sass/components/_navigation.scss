@@ -1,8 +1,45 @@
 // Nav
 .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
     background-color: rgba(38,50,56,.25);
     transition: all .5s .1s;
-    //transition: all .3s .1s ease-in-out;
+
+    & > .container,
+    & > .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &.navbar-expand-md {
+        @media (min-width: 992px) {
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+        }
+
+        & > .container,
+        & > .container-fluid {
+            @media (max-width: 767px) {
+                padding: 0;
+            }
+            
+            @media (min-width: 992px) {
+                flex-wrap: nowrap;
+            }
+        }
+
+        .navbar-toggler {
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }    
 
     &.navbar-solid {
         background-color: rgba(38,50,56,1);
@@ -15,6 +52,35 @@
         left: 0;
         right: 0;        
         z-index: 1030;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        margin-right: 1rem;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;        
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
     }
 }
 
