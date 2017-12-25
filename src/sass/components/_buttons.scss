@@ -3,6 +3,7 @@
     display: inline-block;
     min-width: 7rem;
     padding: .5rem 1.125rem; // 8px 18px
+    background-color: $gray-dark;
     border: 1px solid transparent;
     border-radius: 2px;
     font-size: 1rem;
@@ -14,15 +15,23 @@
     vertical-align: middle;
     user-select: none;
     transition: background-color .2s ease;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:active {
+        border: 1px solid transparent;
+        text-decoration: none;
+        outline: 0;
+    }
 }
 
-.btn-ghost {
-    background-color: darken($header-bg, 5%);
+.btn-shade {
+    background-color: darken($gray-darker, 5%);
 
     &:hover,
     &:focus {
         color: darken($text-color, 10%);
-        background-color: darken($header-bg, 10%);
-        border: 1px solid transparent;
+        background-color: darken($gray-darker, 10%);
     }
 }
