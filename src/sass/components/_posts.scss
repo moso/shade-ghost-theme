@@ -69,7 +69,7 @@
     .post-excerpt {
         p {
             margin: 0 0 1rem;
-            line-height: 2rem;
+            line-height: $line-height;
 
             &:last-of-type {
                 margin: 0;

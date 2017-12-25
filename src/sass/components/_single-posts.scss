@@ -105,11 +105,9 @@
             margin: 2.5rem 0 0;
             padding: 40px 0;
             border-top: 2px solid $border-color;
-            text-align: center;
 
             @media (min-width: 576px) {
                 padding: 1.5rem 0 0;
-                text-align: initial;
             }
 
             .share {

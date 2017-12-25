@@ -4,16 +4,14 @@ h4, h5, h6 {
     margin-top: 0;
     font-family: $font-family-heading;
     font-weight: 400;
-    line-height: $line-height;
+    line-height: 1;
 }
 
 h1 {
     font-size: 3rem;
-    line-height: 1;
 
     @media (min-width: 576px) {
         font-size: $font-size-h2;
-        line-height: 3.75rem;
     }
 
     @media (min-width: 992px) {
@@ -23,11 +21,9 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    line-height: 1;
 
     @media (min-width: 576px) {
         font-size: $font-size-h3;
-        line-height: 3.75rem;
     }
 
     @media (min-width: 992px) {

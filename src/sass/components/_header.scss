@@ -23,6 +23,10 @@ header {
         width: 100%;
         height: auto;
 
+        @media (max-width: 576px) {
+            max-height: 100px;
+        }
+
         @media (min-width: 992px) {
             min-width: 370px;
         }
