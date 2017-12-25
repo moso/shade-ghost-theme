@@ -6,7 +6,6 @@ footer {
     border-top: 1px solid $border-color;
     font-size: .6875rem;
     color: darken($text-color, 20%);
-    text-align: center;
 
     @media (min-width: 576px) {
         font-size: 1rem;
