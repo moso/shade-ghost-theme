@@ -4,13 +4,8 @@ footer {
     padding: 40px 0;
     background-color: $footer-bg;
     border-top: 1px solid $border-color;
-    font-size: .6875rem;
     color: darken($text-color, 20%);
     transition: all .5s .1s;
-
-    @media (min-width: 576px) {
-        font-size: 1rem;
-    }
 
     .md-8 {
         display: flex;
@@ -32,6 +27,12 @@ footer {
         &:focus {
             color: lighten($text-color, 10%);
             cursor: pointer;
+        }
+    }
+
+    .copy-list {
+        li {
+            margin: 0;
         }
     }
 

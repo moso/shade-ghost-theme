@@ -288,11 +288,7 @@ body > #overlay {
     width: 100%;
     opacity: 0;
     overflow-x: hidden;
-    //z-index: 1029;
-
-    // @media (max-width: 767px) {
-    //     right: $sidebar-width;
-    // }
+    z-index: 1029;
 }
 
 .navbar.navbar-shade .navbar-collapse.collapse,
