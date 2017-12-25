@@ -20,7 +20,12 @@ header {
     }
 
     img {
-        min-width: 370px;
+        width: 100%;
+        height: auto;
+
+        @media (min-width: 992px) {
+            min-width: 370px;
+        }
     }
 
     .blog-title {

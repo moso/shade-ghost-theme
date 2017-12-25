@@ -110,7 +110,6 @@ $(document).ready(function () {
 
         $('html').removeClass('nav-open');
         shadeNav.sidenav.sidenav_visible = 0;
-        $('#overlay').remove();
         setTimeout(function () {
             $toggle.removeClass('toggled');
         }, 300);
