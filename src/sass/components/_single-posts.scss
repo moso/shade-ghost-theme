@@ -111,16 +111,6 @@
             }
 
             .share {
-                text-align: right;
-
-                a {
-                    margin-right: 10px;
-
-                    &:last-of-type {
-                        margin: 0;
-                    }
-                }
-
                 i.mdi {
                     color: darken($text-color, 10%);
                     font-size: 1.5rem;
