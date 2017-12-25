@@ -11,8 +11,15 @@ footer {
         font-size: 1rem;
     }
 
+    .md-8 {
+        display: flex;
+        align-items: center; // for better vertical alignment
+    }
+
     p {
-        margin: 0;
+        &:last-of-type {
+            margin: 0;
+        }
     }
 
     a {
