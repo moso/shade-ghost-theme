@@ -39,6 +39,12 @@
                 display: none;
             }
         }
+
+        .navbar-nav {
+            @media (min-width: 992px) {
+                flex-direction: row;
+            }            
+        }
     }    
 
     &.navbar-solid {
@@ -197,6 +203,14 @@
             }
         }
     }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 body > .navbar-collapse {
