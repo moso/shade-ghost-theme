@@ -105,11 +105,12 @@ $(document).ready(function () {
     }
 
     // Close the sidebar if the user clicks a link
-    $('.navbar-side-item').on('click', function () {
+    $('.navbar-side-item a').on('click', function () {
         var $toggle = $('.navbar-toggler');
 
         $('html').removeClass('nav-open');
         shadeNav.sidenav.sidenav_visible = 0;
+        $('#overlay').remove();
         setTimeout(function () {
             $toggle.removeClass('toggled');
         }, 300);
