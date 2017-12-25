@@ -18,12 +18,13 @@ body {
 
 a {
     color: #fff;
-    transition: color .2s ease;
     text-decoration: none;
+    transition: color .2s ease;
 
     &:hover,
     &:focus {
         color: rgba(255,255,255,.75);
+        text-decoration: underline;
     }
 }
 
