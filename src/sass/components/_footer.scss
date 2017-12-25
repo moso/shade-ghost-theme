@@ -11,6 +11,10 @@ footer {
         font-size: 1rem;
     }
 
+    p {
+        margin: 0;
+    }
+
     a {
         color: $text-color;
         text-decoration: none;
@@ -24,9 +28,11 @@ footer {
     }
 
     .social-list {
+        margin-top: 1rem;
         text-align: center;
 
         @media (min-width: 992px) {
+            margin: 0;
             text-align: right;
         }
 
@@ -37,6 +43,10 @@ footer {
 
             &:last-of-type {
                 margin: 0 0 0 5px;
+            }
+
+            a > i.mdi {
+                font-size: 1.25rem;
             }
         }
         
