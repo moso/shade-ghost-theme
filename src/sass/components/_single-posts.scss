@@ -99,7 +99,6 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
             margin: 2.5rem 0 0;
             padding: 40px 0;
             border-top: 2px solid $border-color;
@@ -111,9 +110,10 @@
             }
 
             .share {
+                font-size: 1rem;
+
                 i.mdi {
                     color: darken($text-color, 10%);
-                    font-size: 1.5rem;
                     transition: color .2s;
 
                     &:hover,
