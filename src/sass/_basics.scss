@@ -38,6 +38,7 @@ pre, code {
 
 hr {
     margin: 1rem 0;
+    border-color: lighten($border-color, 10%);
 }
 
 blockquote,
