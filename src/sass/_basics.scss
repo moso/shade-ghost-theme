@@ -84,6 +84,17 @@ mark,
     margin-right: auto;
 }
 
+.list-inline {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+}
+
 .wrapper {
     transition: $offcanvas-transition;
 }
