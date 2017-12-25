@@ -112,6 +112,12 @@
             .share {
                 font-size: 1rem;
 
+                .list-inline > li {
+                    &:first-of-type {
+                        margin: 0 0 5px 0;
+                    }
+                }
+
                 i.mdi {
                     color: darken($text-color, 10%);
                     transition: color .2s;
