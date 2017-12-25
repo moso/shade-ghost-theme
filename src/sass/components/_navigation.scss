@@ -145,6 +145,7 @@
             border-radius: 0;
             outline: none;
             cursor: pointer;
+            transition: $offcanvas-transition;
             
             &:hover,
             &:focus,
@@ -311,6 +312,10 @@ body > #overlay {
 
     .wrapper {
         transform: translate3d(-150px, 0, 0);
+    }
+
+    .navbar-toggler {
+        transform: translate3d(-25px, 0, 0);
     }
 }
 
