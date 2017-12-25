@@ -54,6 +54,13 @@ footer {
 
             a > i.mdi {
                 font-size: 1.25rem;
+                color: darken($text-color, 10%);
+                transition: color .2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    color: darken($text-color, 25%);
+                }
             }
         }
         
