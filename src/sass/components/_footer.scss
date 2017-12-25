@@ -32,7 +32,12 @@ footer {
 
     .copy-list {
         li {
+            display: block;
             margin: 0;
+
+            @media (min-width: 992px) {
+                display: inline-block;
+            }
         }
     }
 
