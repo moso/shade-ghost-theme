@@ -73,6 +73,8 @@ Example: `import 'prismjs/themes/okaidia.css'`
 
 However you will have to remove the `@import 'components/code'`-line from `src/sass/shade.scss` for that to kick in.
 
+You can find examples on usage on the [Advanced Markup Guide](https://shade.moso.io/advanced-markdown)-page.
+
 ## Icons
 Shade imports [Material Design Icons](https://materialdesignicons.com). This is opted for as MDI has equal-sized icons compared to, eg, Font Awesome which aren't equal in size. You can check the full list of icons by clicking the link.
 
