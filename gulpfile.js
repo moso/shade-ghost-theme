@@ -16,6 +16,7 @@ gulp.task('zip', function() {
     return gulp.src([
         '**',
         '!node_modules', '!node_modules/**',
+        '!shade-ghost-theme.zip'
     ])
     .pipe(zip(filename))
     .pipe(gulp.dest(targetDir));
