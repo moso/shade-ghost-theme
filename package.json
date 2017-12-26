@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/moso/shade-ghost-theme/issues"
   },
-  "homepage": "https://shade.moso.io"
+  "homepage": "https://shade.moso.io",
+  "config": {
+    "posts_per_page": 5
+  }
 }
