@@ -2,6 +2,8 @@
 
 Simple theme for my website using [Ghost](http://github.com/tryghost/ghost/).
 
+### This version is no longer maintained
+
 # Features
 
 - Bootstrap 4 alpha-4 and Flexbox.
