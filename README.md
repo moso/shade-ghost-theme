@@ -60,6 +60,8 @@ To compile for production which includes minification of both CSS and JS:
 $ npm run production
 ```
 
+Once you're done, you can use the `zip`-command to package Shade theme files into `./shade-ghost-theme.zip`, which you can then upload to your site.
+
 ## Extending PrismJS syntax highlighting
 By default, [PrismJS](https://github.com/PrismJS/prism) highlights `HTML`, `CSS`, `JavaScript`, and shell-like syntax. Shade adds `Markdown`, `PHP`, `Sass`, and `SCSS` to this list. If you wish to add further languages to its syntax highlight, you can extend this by editing `src/js/shade.js`, and add more imports below the `// PrismJS`-line.
 
