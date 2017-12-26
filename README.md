@@ -81,7 +81,7 @@ Shade imports [Material Design Icons](https://materialdesignicons.com). This is 
 ## Copyright & License
 Copyright? You're free to distribute Shade all you like. The only appeal I have is that the "Theme: [Shade](https://github.com/moso/shade-ghost-theme) by [moso](https://moso.io)" is kept intact.
 
-Shade is released under the [MIT](https://github.com/moso/shade-ghost-theme/blob/master/LICENSE)-license.
+Shade is released under the [MIT](https://github.com/moso/shade-ghost-theme/blob/v2.0/LICENSE)-license.
 
 ## Issues?
 Please report any issues and missing stuff.
