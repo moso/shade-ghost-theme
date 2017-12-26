@@ -60,6 +60,8 @@ To compile for production which includes minification of both CSS and JS:
 $ npm run production
 ```
 
+Laravel Mix automagically use autoprefixer, so don't worry about browser-specific vendor-prefixes.
+
 Once you're done, you can use the `zip`-command to package Shade theme files into `./shade-ghost-theme.zip`, which you can then upload to your site.
 
 ## Extending PrismJS syntax highlighting
