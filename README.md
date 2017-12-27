@@ -35,8 +35,8 @@ However, it's easy to hack and expand Shade by adding new `.hbs`-files, for exam
 
 One really neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
 
-- `page-about` - Custom template for the `/about/`-page
-- `tag-news` - Custom template for `/tag/news/`-archive
+- `page-about.hbs` - Custom template for the `/about/`-page
+- `tag-news.hbs` - Custom template for `/tag/news/`-archive
 - `author-ali.hbs` - Custom template for `/author/ali/`-archive
 
 ## Development - editing the source
@@ -62,7 +62,10 @@ $ npm run production
 
 Laravel Mix automagically use autoprefixer, so don't worry about browser-specific vendor-prefixes.
 
-Once you're done, you can use the `$ npm run zip`-command to package Shade theme files into `./shade-ghost-theme.zip`, which you can then upload to your site.
+Once you're done, you can use the `zip`-command to package Shade theme files into `./shade-ghost-theme.zip`, which you can then easily upload to your site:
+```
+$ npm run zip
+```
 
 ## Extending PrismJS syntax highlighting
 By default, [PrismJS](https://github.com/PrismJS/prism) highlights `HTML`, `CSS`, `JavaScript`, and shell-like syntax. Shade adds `Markdown`, `PHP`, `Sass`, and `SCSS` to this list. If you wish to add further languages to its syntax highlight, you can extend this by editing `src/js/shade.js`, and add more imports below the `// PrismJS`-line.
