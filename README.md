@@ -2,7 +2,7 @@
 
 Simple dark blogging theme for [Ghost](http://github.com/tryghost/ghost/) 1.x.
 
-![shade-screenshot](https://shade.moso.io/img/shade-screenshot.jpg)
+![shade-screenshot](https://shade.moso.io/content/images/screenshot.jpg)
 
 ## Features
 
